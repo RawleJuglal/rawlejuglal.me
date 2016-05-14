@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/Adoptly', function(req, res, next){
-   res.render('Adoptly', { title: 'Adoptly Website'}); 
+   res.render('codecademy/Adoptly', { title: 'Adoptly Website'}); 
 });
 
 module.exports = router;
