@@ -10,4 +10,8 @@ router.get('/Adoptly', function(req, res, next){
    res.render('codecademy/Adoptly', { title: 'Adoptly Website'}); 
 });
 
+router.get('/Airbnb', function(req, res, next){
+    res.render('codecademy/AirBnB', { title: 'AirBnB Website'}); 
+});
+
 module.exports = router;
