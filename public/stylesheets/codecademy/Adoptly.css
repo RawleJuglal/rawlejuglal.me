@@ -1,50 +1,72 @@
-/* Rawle Styling Sheet */
+@media (max-width: 425px) {
+    .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    color: white;
+    background-color: #FF4571;
+    }
 
-html, body {
+    a.list-group-item, button.list-group-item {
+        color: #4F6CFF;
+        background-color:#204056;
+    }
+
+    a.list-group-item:hover, button.list-group-item:hover {
+        color: #4F6CFF;
+        background-color:white;
+    }
+    
+    .list-group{
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 426px) {
+    .nav-center{
+        padding-top:5px;
+        text-align: center;
+        background-color:#204056;
+    }
+    
+    .nav{
+        display: inline-block;
+    }
+    
+    li{
+        display:inline;
+    }
+    
+    a{
+        float:left;
+    }
+    
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color:white !important;
+    background-color:#FF4571 !important;
+}
+    
+    .supporting a{
+    	margin-top:45px;
+        margin-bottom:45px;
+    }
+}
+
+body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.header{
-	background-color:#204056;
-  padding:15px 0px;
-}
-.header ul{
-	margin-left:150px;
-}
-.header li{
-	font-size:2em;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus{
-	background-color:#e52364;
-}
-
 .jumbotron{
   height:600px;
-  margin:0px; 
+  margin:0; 
   padding:0px;
   background-image:url('https://s3.amazonaws.com/codecademy-content/projects/adoptly/bg.jpg');
   background-size:100% 600px;
 }
 
 .jumbotron h1{
-	color:#e52364;
+  color:#e52364;
   font-size: 4em;
   margin-left:70px;
-}
-
-.supporting a{
-	margin-top:45px;
-  margin-bottom:90px;
 }
 
 .footer{
@@ -64,10 +86,4 @@ list-style:none;
 text-decoration:none;
 display:inline;
 color:white;
-}
-
-@media (max-width: 500px) {
-  ul li {
-    width: 100%;
-  }
 }
