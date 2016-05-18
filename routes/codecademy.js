@@ -14,4 +14,8 @@ router.get('/Airbnb', function(req, res, next){
     res.render('codecademy/AirBnB', { title: 'AirBnB Website'}); 
 });
 
+router.get('/Armando', function(req, res, next){
+    res.render('codecademy/Armando', { title: 'Armando Website'}); 
+});
+
 module.exports = router;

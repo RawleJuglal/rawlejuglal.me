@@ -1,0 +1,109 @@
+/*Rawle Styling Sheet*/
+
+@media only screen and (min-width:769px){
+    .target{
+      background-color:#ff003d;
+      padding:0px 36px;
+      border-radius:3px;
+    }
+    
+    .header .target a{
+        color:white;
+    }
+
+    .target:hover{
+    	  color:white;
+          background-color:#028ad3;
+          padding:0px 36px;
+        }
+}
+
+@media only screen and (min-width:320px){
+    .target{
+      background-color:#ff003d;
+      padding:0px 18px;
+      border-radius:3px;
+    }
+    
+    .header .target a{
+        color:white;
+    }
+
+    .target:hover{
+    	  color:white;
+          background-color:#028ad3;
+          padding:0px 18px;
+        }
+}
+
+.no-pad{
+    padding:0;
+    margin:0;
+}
+
+html{
+	margin:0;
+    padding:0;
+} 
+
+.header{
+    padding-top:5px;
+}
+
+.header a{
+    color:#ff003d;
+    text-shadow: 1px 1px silver;
+}
+
+.nav{
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent; 
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/armando-perez/brand.jpg');
+    background-repeat: no-repeat;
+  	background-size:100% 660px;
+    background-attachment: fixed;
+}
+
+
+
+.img-responsive{
+	margin:0 auto;
+}
+
+.main .container .row .col-sm-4{
+	padding-bottom:21px;
+}
+
+.footer ul{
+	list-style:none;
+  margin-top:42px;
+  margin-left:15px;
+  margin-bottom:4px;
+}
+
+
+.footer ul li a{
+	color:black;
+}
+
+.footer ul li a:hover{
+	color:black;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.footer p{
+	margin-top:42px;
+	margin-bottom:15px;
+	margin-right:4px;
+}

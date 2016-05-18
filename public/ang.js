@@ -1,1 +1,1 @@
-var app= angular.module('Adoptly',[]);
+var app= angular.module('codecademy',[]);
