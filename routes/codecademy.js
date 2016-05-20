@@ -18,4 +18,8 @@ router.get('/Armando', function(req, res, next){
     res.render('codecademy/Armando', { title: 'Armando Website'}); 
 });
 
+router.get('/ArticleShift', function(req, res, next){
+    res.render('codecademy/ArticleShift', { title: 'Article Shift Website'});
+});
+
 module.exports = router;
