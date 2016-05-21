@@ -22,4 +22,8 @@ router.get('/ArticleShift', function(req, res, next){
     res.render('codecademy/ArticleShift', { title: 'Article Shift Website'});
 });
 
+router.get('/Bass', function(req, res, next){
+    res.render('codecademy/Bass', { title: 'Bass Website'});    
+});
+
 module.exports = router;
