@@ -1,0 +1,41 @@
+.nav-pills li{
+    border:1px solid red;
+    border-radius:4px;
+}
+
+.nav-center {  
+  text-align: center;
+}
+
+.nav-center ul {
+    display: inline-block;
+}
+
+.nav-center li {
+    display: inline
+}
+
+.nav-center a {
+    float: left;
+    color:#d8192f;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+    background-color:rgba(216,25,47,1);
+    box-shadow:0 2px 4px rgba(0,0,0,.5);
+    color:#fff;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg');
+  background-size:100% 400px;
+  color:white;
+}
+
+@media (min-width: 426px) {
+    .nav-center ul{
+        margin-top:20px;
+        margin-bottom: 10px;
+    }
+}

@@ -26,4 +26,8 @@ router.get('/Bass', function(req, res, next){
     res.render('codecademy/Bass', { title: 'Bass Website'});    
 });
 
+router.get('/BestBite', function(req, res, next){
+    res.render('codecademy/BestBite', { title: 'Best Bite Website'}); 
+});
+
 module.exports = router;
