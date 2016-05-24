@@ -1,0 +1,146 @@
+body {
+  font-family: "Oxygen", sans-serif;
+  color:white;
+  font-weight: 300; 
+  margin: 0;
+  padding: 0;
+}
+
+.no-pad{
+    margin:0px;
+    padding:0px;
+}
+
+.main{
+    background-color:black;
+}
+
+.main img{
+    margin:20px 0px 10px 0px;
+}
+
+.nav-pills li:nth-child(2){
+    border:1px solid #317AA1;
+    border-radius:4px;
+}
+
+.nav-center ul{
+    margin:20px 0 10px 0;
+}
+
+.btn-link {
+    color: #317AA1;
+    background-color: transparent;
+    border-color: #317AA1;
+    border-radius:4px;
+}
+
+.btn-link:hover {
+    color: white;
+    background-color: #317AA1;
+    border-color: #317AA1;
+    border-radius:4px;
+}
+
+form{
+    margin:20px 0px 10px 0px;
+}
+
+input[type=search]{
+	background-color:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    border-radius:0px;
+}
+
+input[type=search]:focus{
+    outline:0px !important;
+}
+
+.supporting {
+  background-image: url('http://cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/973/full/tileable-dark-wood-textures-5.jpg');
+  background-size:100% 990px;
+  padding-bottom:90px;
+}
+
+.supporting img{
+	margin:0 auto;
+	margin-top:12px;
+}
+
+.supporting h1, .feature h1{
+  margin:72px 0 12px 0;
+  font-size:2.2em;
+	color:#317AA1;
+}
+
+.supporting p, .feature p{
+  color:white;
+}
+
+.feature{
+  height:250px;
+	background-image:url('https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg');
+  background-size:100% 250px;
+}
+
+.footer{
+	background-color:black;
+	padding:20px 0px 10px 0px;
+}
+
+.footer ul{
+	list-style:none;
+}
+
+.footer li{
+	color:white;
+}
+
+.footer li:first-child{
+	padding-bottom:12px;
+  font-size:1.2em;
+}
+
+.footer li a{
+	text-decoration:none;
+}
+
+.footer li a:hover{
+	text-decoration:none;
+}
+
+@media (max-width: 425px) {
+    .nav-center {  
+      text-align: center;
+    }
+
+    .nav-center ul {
+        display: inline-block;
+    }
+
+    .nav-center li {
+        display: inline
+    }
+
+    .nav-center a {
+        float: left;
+        color:#317AA1;
+    }
+}
+
+@media (min-width: 1025px) {
+    .img-stretch{
+        width:100%;
+        height:344px;
+        padding:0px 25px 0px 25px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .img-stretch{
+        width:100%;
+        height:322.28px;
+        padding:0;
+    }
+}

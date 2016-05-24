@@ -30,4 +30,8 @@ router.get('/BestBite', function(req, res, next){
     res.render('codecademy/BestBite', { title: 'Best Bite Website'}); 
 });
 
+router.get('/Bolt', function( req, res, next){
+    res.render('codecademy/Bolt', { title: 'Bolt Website'});    
+});
+
 module.exports = router;
