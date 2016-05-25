@@ -34,4 +34,8 @@ router.get('/Bolt', function( req, res, next){
     res.render('codecademy/Bolt', { title: 'Bolt Website'});    
 });
 
+router.get('/Broadway', function( req, res, next){
+    res.render('codecademy/Broadway', { title: 'Broadway Website'});    
+});
+
 module.exports = router;
