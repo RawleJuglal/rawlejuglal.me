@@ -26,7 +26,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='/bower_components/angular/angular.min.js'></script>
   </head>
-  <body>
+  <body ng-app='codecademy'>
         <nav class="navbar navbar-default navbar-inverse no-pad">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,74 +51,15 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-        <div class="jumbotron no-pad">
-          <div class="container">  
-            <div class="main">
-              <div class='row'>
-                <div class='col-xs-12'>
-                  <h1 class='text-center'>We are Broadway</h1>
-                </div><!--End of col-xs-12-->
-              </div><!--End of row-->
-              <div class='row'>
-                <div class='col-xs-12 text-center'>
-                  <a href="#" class='btn btn-default btn-main'>Get Started</a>
-                </div><!--End of col-xs-12-->
-              </div><!--End of row-->
-            </div><!--End of main-->
-          </div><!--End of container-->
-        </div><!--End of jumbotron-->
-        <div class='supporting'>
-          <div class='container'>
-            <div class='row text-center'>
-              <div class='col-sm-4'>
-                <div class='row'>
-                  <div class='col-sm-12'>
-                    <img src='https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg'>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-                <div class='row'>
-                  <div class='col-sm-12 text-center'>
-                    <h2>Design</h2>
-                    <p>Make your projects look great and interact beautifully.</p>
-                    <a class='btn btn-default' href="#">Learn More</a>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-              </div><!--End of col-sm-4-->
-              <div class='col-sm-4'>
-                <div class='row'>
-                  <div class='col-sm-12'>
-                    <img src='https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg'>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-                <div class='row'>
-                  <div class='col-sm-12 text-center'>
-                    <h2>Develop</h2>
-                    <p>Use modern tools to turn your design into a web site</p>
-                    <a class='btn btn-default' href="#">Learn More</a>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-              </div><!--End of col-sm-4-->
-              <div class='col-sm-4'>
-                <div class='row'>
-                  <div class='col-sm-12'>
-                    <img src='https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg'>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-                <div class='row'>
-                  <div class='col-sm-12 text-center'>
-                    <h2>Deploy</h2>
-                    <p>Use modern tools to turn your design into a web site</p>
-                    <a class='btn btn-default' href="#">Learn More</a>
-                  </div><!--End of col-sm-12-->
-                </div><!--End of row-->
-              </div><!--End of col-sm-4-->
-            </div><!--End of row-->
-          </div><!--End of container-->
-        </div><!--End of supporting-->
+        <broadway-Home></broadway-Home>
         <div class="footer">
           <div class="container">
             <p>&copy; Broadway 2015</p>
           </div>
         </div>
+<!--Module-->
+<script src="/ang.js"></script>
+<!--Directives-->
+<script src="/Directives/codecademy/broadwayHome.js"></script>
   </body>
 </html>
