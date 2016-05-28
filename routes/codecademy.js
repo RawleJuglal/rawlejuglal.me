@@ -38,4 +38,8 @@ router.get('/Broadway', function( req, res, next){
     res.render('codecademy/Broadway', { title: 'Broadway Website'});    
 });
 
+router.get('/Excursion', function( req, res, next){
+    res.render('codecademy/Excursion', { title: 'Excursion Website'}); 
+});
+
 module.exports = router;
