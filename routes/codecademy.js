@@ -42,4 +42,8 @@ router.get('/Excursion', function( req, res, next){
     res.render('codecademy/Excursion', { title: 'Excursion Website'}); 
 });
 
+router.get('/Headlines', function( req, res, next){
+    res.render('codecademy/Headlines', { title: 'Headlines Website'}); 
+});
+
 module.exports = router;

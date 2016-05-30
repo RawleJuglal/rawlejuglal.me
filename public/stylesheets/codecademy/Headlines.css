@@ -1,0 +1,67 @@
+/*Rawle Styling Sheet*/
+.no-pad{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.navbar{
+    margin-top:20px;    
+}
+
+.navbar-headlines .navbar-nav>li>a{
+    color:black;
+}
+
+.navbar-headlines .navbar-nav>li:hover{
+    background-color:#d8d8d8;
+}
+.navbar-headlines{
+    background-color:white;
+    border:none;
+}
+
+.jumbotron-headlines{
+    background-color:white;
+}
+
+.banner{
+    background-color:#333333;
+    padding:20px 0px 10px 0px;
+    color:white;
+}
+
+.cards{
+    background-color:#ffc200;
+}
+
+.cards img{
+    padding:12px 0px;
+}
+
+.footer{
+    background-color:black;
+    color:white;
+    padding:20px 0px 10px 0px;
+}
+
+.footer img{
+	display:inline;
+	height:32px;
+	width:32px;
+}
+
+@media (min-width: 426px) {
+    .navbar-brand{
+        font-size:3em;
+    }
+    
+    .navbar-nav{
+        border-bottom:1px solid #ddd;
+    }
+}
