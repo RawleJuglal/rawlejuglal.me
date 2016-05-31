@@ -1,0 +1,116 @@
+/*Rawle Styling Sheet*/
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.no-pad{
+    margin:0px;
+    padding:0px;
+}
+
+.navbar-brand{
+    display:none;
+}
+
+
+.header {
+    height: 800px;
+    background-image:url('https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg');
+    background-size:800px 100%;
+    color:white;
+}
+
+.btn-innovation{
+    color: white;
+    background-color: black;
+    border-color: #272822;
+    border-radius:0px;
+}
+
+.btn-innovation:hover{
+    color: white;
+    background-color: #117bff;
+    border-color: #117bff;
+    border-radius:0px;
+    transition: background .5s;
+}
+
+.navbar-nav li:hover{
+    background-color:#117bff;
+}
+
+.main{
+    padding:0px 0px 20px 0px;    
+}
+
+.main h2{
+    font-weight:bold;
+}
+
+.jumbotron{
+    color:white;
+    background-image:url('https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg');
+    margin:0px;
+}
+
+.footer { 
+  font-size: 1.25em;
+  background-color:black;
+  padding:20px 0px 10px 0px;
+  color:white;
+}
+
+@media (min-width: 320px) {
+    .heading{
+        font-size:3em;
+    }
+    
+    .main h2{
+        font-size:2em;
+    }
+    
+    .jumbotron{
+        height:400px;
+        background-size:400px 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading{
+        font-size:6em;
+    }
+    
+    .header p{
+        font-size:1.75em;
+    }
+    
+    .navbar{
+        border-radius:0px;
+    }
+    
+    .jumbotron{
+        height:450px;
+        background-size:450px 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading{
+        font-size:8em;
+    }
+    
+    .header p{
+        font-size:3em;
+    }
+    
+    .main img{
+        height:200px;
+    }
+    
+    .jumbotron{
+        height:500px;
+        background-size:500px 100%;
+    }
+}
