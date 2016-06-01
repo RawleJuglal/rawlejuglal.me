@@ -1,0 +1,144 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+  color:white;
+}
+
+.main{
+  height: 250px;
+  color:white;
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg');
+  background-size:100% 250px;
+}
+
+
+.main h1{
+    font-size:6em;
+}
+
+.btn-move{
+  text-decoration:none;
+  background-color:black;
+  color:white;
+  margin:12px;
+  padding:10px 30px;
+  border-radius:0px;
+}
+
+.btn-move:hover{
+  text-decoration:none;
+  background-color:orange;
+  color:black;
+  margin:12px;
+  padding:10px 30px;
+}
+
+.supporting{
+    background-color:#1c1c1c;
+    padding:10px 0px 20px 0px;
+}
+
+.supporting h2{
+    color: #ffa800;
+}
+
+.feature{
+  height: 250px;
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg');
+  background-size:100% 250px;
+}
+
+.feature p{
+    font-size:1.3em;
+    line-height: 250px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-move2{
+  text-decoration:none;
+  margin:12px;
+  padding:10px 30px;
+  border-radius:0px;
+}
+
+.footer{
+  height: 250px;
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg');
+  background-size:100% 250px;  
+}
+
+.footer p{
+    font-size:1.3em;
+    margin:150px 0px 0px 0px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 426px) {
+    .main, .feature, .footer{
+        height:500px;
+        background-size:100% 500px;
+    }
+    
+    .main h1{
+        font-size:12em;
+        margin:100px 0px 0px 0px;
+    }
+    
+    .main p{
+        font-size:2em;
+    }
+    
+    .supporting{
+        padding:60px 0px 70px 0px;    
+    }
+    
+    .supporting h2{
+        font-size:3em;
+    }
+    
+    .feature p{
+        font-size:3.4em;
+        line-height: 500px;
+    }
+    
+    .footer p{
+        font-size:3.4em;
+        margin:300px 0px 0px 0px;
+    }
+}
+
+@media (min-width: 769px) {
+    .main, .feature, .footer{
+        height:700px;
+        background-size:100% 700px;
+    }
+    
+    .main h1{
+        font-size:16em;
+        margin:150px 0px 0px 0px;
+    }
+    
+    .main p{
+        font-size:3em;
+    }
+    
+    .feature p{
+        font-size:5.2em;
+        line-height: 700px;
+    }
+    
+    .footer p{
+        font-size:5em;
+        margin:400px 0px 0px 0px;
+    }
+}
