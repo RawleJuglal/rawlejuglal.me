@@ -1,0 +1,88 @@
+/*Rawle Styling Sheet*/
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Merriweather', serif;
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/junction/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-junction{
+    background-color:rgba(0,0,0,.5);
+    border:none;
+}
+
+.navbar-brand img{
+    width:25px;
+    height:25px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    text-decoration:underline;
+    color:#58E8B7;
+}
+
+.page{
+    color:white;
+    text-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+.supporting{
+    color:white;    
+}
+
+.supporting p{
+    font-size:1.5em;    
+}
+
+.supporting img{
+    width:200px;
+}
+
+.btn-junction{
+    background-color:#58E8B7;
+    margin:100px 0px 100px 0px;
+}
+
+.btn-junction a{
+    text-decoration:none;
+    color:white;
+}
+
+.btn-junction:hover{
+    background-color:rgba(0,255,188,.5);
+    
+}
+
+.btn-junction a:hover{
+    color:white;
+	text-decoration:none;
+}
+
+
+
+@media (min-width: 426px) {
+  .navbar-junction{
+      border-radius:0px;
+  }  
+  
+  .page h1{
+    font-size:6em;    
+  }
+  
+  .supporting{
+    margin:100px 0px 0px 0px;    
+  }
+  
+  .supporting img{
+      width:100px;
+  }
+}

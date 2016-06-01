@@ -50,4 +50,8 @@ router.get('/Innovation', function( req, res, next){
    res.render('codecademy/Innovation', { title: 'Innovation Website'}); 
 });
 
+router.get('/Junction', function( req, res, next){
+    res.render('codecademy/Junction', { title: 'Junction Website'}); 
+});
+
 module.exports = router;
