@@ -1,0 +1,120 @@
+/*Rawle Styling Sheet*/
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.no-pad{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    background-color:black;
+    padding:20px 0px 10px 0px;
+}
+
+.header img{
+    height:50px;
+}
+
+.btn-link, .btn-link:hover {
+    color:white;
+    background-color: transparent;
+    border-bottom:1px solid #317AA1;
+    border-radius:4px;
+    text-decoration: none;
+}
+
+form{
+    margin:20px 0px 10px 0px;
+}
+
+input[type=search]{
+	background-color:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    border-radius:0px;
+}
+
+input[type=search]:hover{
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #317AA1;
+    border-radius:0px;
+}
+
+.navbar-newsroom{
+    background-color:rgb(15, 70, 79);
+    border:none;
+    margin:0px;
+}
+
+.navbar-newsroom .navbar-toggle{
+    border-color:#1E8A9B;
+}
+
+.navbar-newsroom .navbar-nav>li>a{
+   color:white;
+}
+
+.navbar-newsroom .navbar-nav>li:hover{
+    background-color:#1a77ff;
+}
+
+.navbar-brand{
+    display:none;
+}
+
+.jumbotron{
+  height:250px;
+  color:white;
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg');
+  background-size:100% 250px; 
+  margin:0px;
+}
+
+.supporting{
+    background-color:gray;
+    padding:20px 0px 10px 0px;
+}
+
+
+.supporting ul{
+    list-style: none;
+}
+
+.latest{
+    background-color:white;    
+}
+
+.upcoming{
+    background-color:rgb(15, 70, 79);
+    color:white;
+}
+
+@media (min-width: 426px) {
+  .navbar-newsroom{
+      border-radius:0px;
+  }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotron{
+        height:350px;
+        background-size:100% 350px;
+    }
+}

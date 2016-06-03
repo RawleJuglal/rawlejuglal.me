@@ -58,4 +58,8 @@ router.get('/Move', function( req, res, next){
     res.render('codecademy/Move', { title: 'Move Website'});    
 });
 
+router.get('/Newsroom', function( req, res, next){
+    res.render('codecademy/Newsroom', { title: 'Newsroom Website'});    
+});
+
 module.exports = router;
