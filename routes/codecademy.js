@@ -62,4 +62,8 @@ router.get('/Newsroom', function( req, res, next){
     res.render('codecademy/Newsroom', { title: 'Newsroom Website'});    
 });
 
+router.get('/Pocketbook', function( req, res, next){
+    res.render('codecademy/Pocketbook', { title: 'Pocketbook Website'}); 
+});
+
 module.exports = router;
