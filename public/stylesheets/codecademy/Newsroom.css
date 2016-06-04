@@ -80,17 +80,53 @@ input[type=search]:hover{
     padding:20px 0px 10px 0px;
 }
 
-
-.supporting ul{
-    list-style: none;
+.latest{
+    background-color:white;
 }
 
-.latest{
-    background-color:white;    
+.latest, .upcoming{
+    padding:10px 0px 10px 0px;
+}
+
+.latest ul, .upcoming ul{
+    margin:0px;
+    padding:0px 6px 0px 6px;
+}
+
+.latest ul li, .upcoming ul li{
+    padding-right:0px;
+}
+
+.latest ul li:first-child, .upcoming ul li:first-child{
+    font-size:1.85em;
+    font-weight:bold;
+    padding:0px 0px 12px 0px;
+}
+
+.latest ul li:nth-child(2n+3), .upcoming ul li:nth-child(2n+3){
+    font-size:1.45em;
+    font-weight: bold;
+    text-decoration:underline;
 }
 
 .upcoming{
     background-color:rgb(15, 70, 79);
+    color:white;
+}
+
+#banner{
+    padding:50px 0px 20px 0px;
+    width:100%; 
+    min-height:200px;
+}
+
+.footer{
+    background-color:black;
+    color:white;
+    padding:20px 0px 10px 0px;
+}
+
+.footer ul li a{
     color:white;
 }
 
