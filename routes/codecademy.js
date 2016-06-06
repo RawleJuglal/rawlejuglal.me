@@ -66,4 +66,8 @@ router.get('/Pocketbook', function( req, res, next){
     res.render('codecademy/Pocketbook', { title: 'Pocketbook Website'}); 
 });
 
+router.get('/RedEyePhotography', function( req, res, next){
+    res.render('codecademy/RedEyePhotography', { title: 'Red Eye Photography Website'}); 
+});
+
 module.exports = router;

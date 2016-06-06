@@ -1,0 +1,67 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#cccdce;
+}
+
+.header{
+    background-color:white;
+    padding:20px 0px;  
+}
+
+.navbar-rep{
+    background-color: #cccdce;
+    margin:0px;
+    border:0px;
+}
+
+.navbar-brand{
+    display:none;
+}
+
+.navbar-default .navbar-nav>li>a{
+    -webkit-transition:color .5s;
+    transition:color .5s;
+    color:white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    -webkit-transition:color 1s;
+    transition:color 1s;
+    color:black;
+}
+
+.feature{
+    background-color:#cccdce;
+}
+
+.feature .container-fluid .row .col-xs-12{
+    margin-bottom:12px;    
+}
+
+.feature img{
+    width:100%;
+}
+
+.footer{
+    background-color:#cccdce;
+}
+
+@media (min-width: 426px) {
+  .navbar-rep{
+      border-radius:0px;
+  }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
