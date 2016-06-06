@@ -70,4 +70,8 @@ router.get('/RedEyePhotography', function( req, res, next){
     res.render('codecademy/RedEyePhotography', { title: 'Red Eye Photography Website'}); 
 });
 
+router.get('/Shutterbugg', function( req, res, next){
+    res.render('codecademy/Shutterbugg', { title: 'Shutterbugg Website'});
+});
+
 module.exports = router;
