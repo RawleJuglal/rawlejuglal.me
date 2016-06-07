@@ -23,6 +23,7 @@ var users = require('./routes/users');
 var heartbeats = require('./routes/heartbeat');
 var posts = require('./routes/blog');
 var projects = require('./routes/codecademy');
+var portfolios = require('./routes/portfolio');
 //-----------------------------------------------------------------------
 //instanciating app as an express object
 var app = express();
@@ -52,7 +53,8 @@ app.use('/blog/posts', posts);
 app.use('/heartbeat', heartbeats);
 //when client submits base url/codecademy responds with projects which requires ./routes/codecademy seen above or go to file for more details
 app.use('/codecademy', projects);
-
+//when client submits base url/Portfolio responds with projects which requires ./routes/Portfolio seen above or go to file for more details
+app.use('/portfolio', portfolios);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
