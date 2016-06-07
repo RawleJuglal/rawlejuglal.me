@@ -1,8 +1,60 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:0px;
+  padding:0px;
+  background:url(https://rawlejuglal-me-rawlejuglal-1.c9users.io/images/workspaceEdit.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Yellowtail', cursive;
+}
+
+blockquote{
+  border-left:5px solid rgba( 0, 195, 229, 1);  
+}
+
+.header h1{
+  font-size:1.25em;  
+}
+
+.btn-index{
+  color:black;
+  background-color:transparent;
+  border:1px solid black;
+  -webkit-transition:color .5s;
+  transition:background-color .5s;
+}
+
+.btn-index:hover{
+  color:black;
+  text-shadow: 1px 1px 2px silver; 
+  background-color:rgba( 0, 195, 229, 1);
+  border:1px solid silver;
+  -webkit-transition:background-color .1s;
+  transition:background-color .1s;
 }
 
 a {
-  color: #00B7FF;
+  color:rgba( 0, 195, 229, 1);
+  -webkit-transition:color .5s;
+    transition:color .5s;
+}
+
+a:hover{
+  color:rgba( 0, 86, 101, .55);
+  -webkit-transition:color .1s;
+    transition:color .1s;
+}
+
+
+@media (min-width: 425px) {
+  .header h1{
+    font-size:2.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .header h1{
+    font-size:5em;
+  }
 }
