@@ -14,11 +14,13 @@ $( document ).ready(function() {
 
 function getHeight(){
     var windowHeight = $(window).height();
-    var headingHeight = parseInt(windowHeight/4)+'px';
+    var headingHeight = parseInt(windowHeight-50)+'px';
+    var buttonHeight = parseInt(windowHeight/8)+'px';
     
-    initHeight(headingHeight);
+    initHeight(headingHeight, buttonHeight);
 }
 
-function initHeight(num){
-    $('.btn-index').css('margin-top',num);
+function initHeight(num, num2){
+    $('.main').css('height',num);
+    $('.btn-index').css('margin-top', num2);
 }
