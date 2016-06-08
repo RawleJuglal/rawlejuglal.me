@@ -28,7 +28,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='/bower_components/angular/angular.min.js'></script>
   </head>
-  <body>
+  <body ng-app='rawlejuglalMe'>
       <div class='header'>
           <div class='container-fluid'>
               <div class='row'>
@@ -39,19 +39,19 @@
               </div><!--End of row-->
           </div><!--End of container-fluid-->
       </div><!--End of header-->
-      <div class='projects'>
+      <div class='projects' ng-controller='rawleProfileController'>
           <div class='container-fluid'>
               <div class='row'>
                   <div class='col-xs-12'>
-                    <ul>
+                    <ul ng-repeat='note in notes'>
                       <li>
-                        <a href="codecademy/Shutterbugg">
-                          <h2 class='text-center'>Shutterbugg</h2>
-                          <p class='text-center'><i class="fa fa-bug fa-2x" aria-hidden="true"></i></p>
-                          <p>Capture the moments that matter</p>
+                        <a href="{{note.url}}">
+                          <h2 class='text-center'>{{note.title}}</h2>
+                          <p class='text-center'><i class="fa{{note.faImg}}{{note.faSize}}" aria-hidden="true"></i></p>
+                          <p>{{note.desc}}</p>
                         </a>
                       </li>
-                      <li>
+                      <!--<li>
                         <a href="codecademy/RedEyePhotography">
                           <h2 class='text-center'>Red Eye Photography</h2>
                           <p class='text-center'><i class="fa fa-eye fa-3x" aria-hidden="true"></i></p>
@@ -155,7 +155,7 @@
                           <p class='text-center'><i class="fa fa-paw fa-4x" aria-hidden="true"></i></p>
                           <p>Meet your new best friend</p>
                         </a>
-                      </li>
+                      </li>-->
                     </ul>  
                   </div><!--End of col-xs-12-->
               </div><!--End of row-->
@@ -176,5 +176,9 @@
         </div><!--End of row-->
       </div><!--End of container-->
     </div><!--End of footer-->
+    <!--Module-->
+    <script src="/ang.js"></script>
+    <!--Controller-->
+    <script src='/Controllers/rawleController.js'></script>
   </body>
 </html>
