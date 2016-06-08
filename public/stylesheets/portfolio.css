@@ -1,4 +1,20 @@
 /*Rawle Styling Sheet*/
+body{
+  background:url(/images/chalkboard-or-blackboard.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.header{
+  color:white;
+}
+
+.header h1{
+  font-family: 'Peralta', cursive; 
+  font-size:4em;
+}
 
 .projects *{
     margin:0px;
@@ -8,11 +24,7 @@
 .projects{
   font-family:arial,sans-serif;
   font-size:100%;
-  background:url(/images/chalkboard-or-blackboard.jpg)no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  
   color:#fff;
 }
 
@@ -78,7 +90,7 @@
   -moz-transform:rotate(-3deg);
   position:relative;
   top:-5px;
-  background:#ccf;
+  background:#cceeff;
 }
 
 .projects ul li:nth-child(5n) a{
@@ -115,4 +127,10 @@
   color:rgba( 0, 86, 101, .55);
   -webkit-transition:color .1s;
     transition:color .1s;
+}
+
+@media (min-width: 426px) {
+  .header h1{
+    font-size: 8em;
+  }
 }
