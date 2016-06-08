@@ -22,5 +22,96 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faImg:' fa-book',
                 faSize:' fa-4x',
                 desc:'Ditch the pen & paper'
+            },
+            {
+                url:'codecademy/Newsroom',
+                title:'Newsroom',
+                faImg:' fa-newspaper-o',
+                faSize:' fa-5x',
+                desc:'Real news, real time'
+            },
+            {
+                url:'codecademy/Move',
+                title:'Move',
+                faImg:' fa-arrows',
+                faSize:' fa-2x',
+                desc:'Form healthy habits to take your fitness to the next level'
+            },
+            {
+                url:'codecademy/Junction',
+                title:'Junction',
+                faImg:' fa-rss',
+                faSize:' fa-4x',
+                desc:'Reading is more social than you think'
+            },
+            {
+                url:'codecademy/Innovation',
+                title:'Innovation',
+                faImg:' fa-lightbulb-o',
+                faSize:' fa-3x',
+                desc:'Connect your ideas globally'
+            },
+            {
+                url:'codecademy/Headlines',
+                title:'Headlines',
+                faImg:' fa-header',
+                faSize:' fa-3x',
+                desc:'News that\'s relevant to you'
+            },
+            {
+                url:'codecademy/Excursion',
+                title:'Excursion',
+                faImg:' fa-globe',
+                faSize:' fa-2x',
+                desc:'Discover the hidden places in the world around you'
+            },
+            {
+                url:'codecademy/Broadway',
+                title:'Broadway',
+                faImg:' fa-ticket',
+                faSize:' fa-5x',
+                desc:'Simple as 1-2-3'
+            },
+            {
+                url:'codecademy/Bolt',
+                title:'Bolt',
+                faImg:' fa-bolt',
+                faSize:' fa-3x',
+                desc:'A world of movies at your fingertips'
+            },
+            {
+                url:'codecademy/BestBite',
+                title:'Best Bite',
+                faImg:' fa-cutlery',
+                faSize:' fa-2x',
+                desc:'Always have the answer to "what\'s for dinner"'
+            },
+            {
+                url:'codecademy/Bass',
+                title:'Bass',
+                faImg:' fa-music',
+                faSize:' fa-5x',
+                desc:'Turn up the bass'
+            },
+            {
+                url:'codecademy/Armando',
+                title:'Armando',
+                faImg:' fa-camera-retro',
+                faSize:' fa-4x',
+                desc:'My own lens'
+            },
+            {
+                url:'codecademy/AirBnB',
+                title:'AirBnB',
+                faImg:' fa-home',
+                faSize:' fa-3x',
+                desc:'A place like home'
+            },
+            {
+                url:'codecademy/Adoptly',
+                title:'Adoptly',
+                faImg:' fa-paw',
+                faSize:' fa-4x',
+                desc:'Meet your new best friend'
             }]
 }]);
