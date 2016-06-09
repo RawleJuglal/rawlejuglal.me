@@ -25,74 +25,100 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='/bower_components/angular/angular.min.js'></script>
   </head>
-  <body ng-app='codecademy'>
-    <div class="articles container" ng-controller='ashiftController'>
-      <div ng-repeat="article in articles">
-          <article-Shift listing='article'></article-Shift>
-      </div>
-      
+  <body>
+      <div class='container'>
+        <div class="panel-group panel-articleShift" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <div class="item row">
+                    <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
+                      <p class="source">AW Commercial Aviation</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
+                      <p class="title">CSeries Supplier Scramble</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+                      <p class="pubdate">Mar 22</p>
+                    </div>
+                  </div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <div class="description row">
+                  <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+                    <h1>CSeries Supplier Scramble</h1>
+                    <p>Three months before the planned first flight of its CSeries, Bombardier is grappling with supplier issues crucial to meeting its production cost...</p>
+                  </div><!--End of col-xs-12-->
+                </div><!--End of row-->
+              </div><!--End of panel-body-->
+            </div><!--End of collapseOne-->
+          </div><!--End of panel-default-->
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="item row">
+                    <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
+                      <p class="source">AW business aviation</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
+                      <p class="title">Flying the Gulfstream G650</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+                      <p class="pubdate">Mar 22</p>
+                    </div>
+                  </div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <div class="description row">
+                  <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+                    <h1>Flying the Gulfstream G650</h1>
+                    <p>Gulfstream is turning up the heat in the large-cabin business aircraft competition with its new G650 flagship, the largest, fastest, farthest-ranging...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="item row">
+                    <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
+                      <p class="source">FLIGHT</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
+                      <p class="title">New retirements cut RAF VC10 fleet to four</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+                      <p class="pubdate">Mar 22</p>
+                    </div>
+                  </div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <div class="description row">
+                  <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+                    <h1>New retirements cut RAF VC10 fleet to four</h1>
+                    <p>The UK Royal Air Force has retired another two of its Vickers VC10 tankers, with the pair's departure reducing its inventory of the Rolls-Royce...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--End of container-->
 
       <!--<div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">AW Commercial Aviation</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">CSeries Supplier Scramble</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>CSeries Supplier Scramble</h1>
-            <p>Three months before the planned first flight of its CSeries, Bombardier is grappling with supplier issues crucial to meeting its production cost...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">AW business aviation</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">Flying the Gulfstream G650</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>Flying the Gulfstream G650</h1>
-            <p>Gulfstream is turning up the heat in the large-cabin business aircraft competition with its new G650 flagship, the largest, fastest, farthest-ranging...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">FLIGHT</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">New retirements cut RAF VC10 fleet to four</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>New retirements cut RAF VC10 fleet to four</h1>
-            <p>The UK Royal Air Force has retired another two of its Vickers VC10 tankers, with the pair's departure reducing its inventory of the Rolls-Royce...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
         <div class="item row">
           <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
             <p class="source">FLIGHT</p>
@@ -153,13 +179,5 @@
       </div>-->
 
     </div>
-    <!--Module-->
-    <script src="/ang.js"></script>
-    <!--Controller-->
-        <script src='/Controllers/codecademy/ashiftController.js'></script>
-    <!--Directives-->
-    <script src="/Directives/codecademy/articleShift.js"></script>
-    <!--Custom-->
-    <script src='/javascripts/codecademy/ArticleShift.js'></script>
   </body>
 </html>
