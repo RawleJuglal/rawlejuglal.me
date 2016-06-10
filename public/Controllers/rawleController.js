@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/ArticleShift',
+                title:'Article Shift',
+                faImg:' fa-expand',
+                faSize:' fa-2x',
+                desc:'Never miss a flight change'
+            },
+            {
                 url:'codecademy/Shutterbugg',
                 title:'Shutterbugg',
                 faImg:' fa-bug',

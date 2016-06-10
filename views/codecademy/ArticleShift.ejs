@@ -26,140 +26,42 @@
     <script src='/bower_components/angular/angular.min.js'></script>
   </head>
   <body ng-app='codecademy'>
-    <div class="articles container" ng-controller='ashiftController'>
-      <div ng-repeat="article in articles">
-          <article-Shift listing='article'></article-Shift>
-      </div>
-      
-
-      <!--<div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">AW Commercial Aviation</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">CSeries Supplier Scramble</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>CSeries Supplier Scramble</h1>
-            <p>Three months before the planned first flight of its CSeries, Bombardier is grappling with supplier issues crucial to meeting its production cost...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">AW business aviation</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">Flying the Gulfstream G650</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>Flying the Gulfstream G650</h1>
-            <p>Gulfstream is turning up the heat in the large-cabin business aircraft competition with its new G650 flagship, the largest, fastest, farthest-ranging...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">FLIGHT</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">New retirements cut RAF VC10 fleet to four</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>New retirements cut RAF VC10 fleet to four</h1>
-            <p>The UK Royal Air Force has retired another two of its Vickers VC10 tankers, with the pair's departure reducing its inventory of the Rolls-Royce...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">FLIGHT</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">Virgin can deliver more value for Delta than for SIA: Bastian</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Jul 17</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>Virgin can deliver more value for Delta than for SIA: Bastian</h1>
-            <p>Delta Air Lines president Ed Bastian is confident that the carrier can extract far more value from its shareholding in Virgin Atlantic compared with...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">AW Defense</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">Freedom Experiences Two More Power Outages</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>Freedom Experiences Two More Power Outages</h1>
-            <p>The Littoral Combat Ship (LCS-1) USS Freedom’s first overseas deployment to Southeast Asia has been marred by two more power outages...</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-            <p class="source">FLIGHT</p>
-          </div>
-          <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-            <p class="title">FedEx to acquire up to 30 United 757s</p>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <p class="pubdate">Mar 22</p>
-          </div>
-        </div>
-        <div class="description row">
-          <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-            <h1>FedEx to acquire up to 30 United 757s</h1>
-            <p>United Airlines is to sell up to 30 Boeing 757s to freight operator FedEx Express, with deliveries of the twinjets set to start this year.</p>
-          </div>
-        </div>
-      </div>-->
-
-    </div>
+      <div class='container'>
+        <div class="panel-group panel-articleShift" id="accordion" role="tablist" aria-multiselectable="true" ng-controller="ashiftController">
+          <div class="panel panel-default panel-ashift" ng-repeat="article in articles">
+              <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="{{article.headingHREF}}" aria-expanded="false" aria-controls="{{article.headingControls}}">
+                <div class="panel-heading" role="tab" id="{{article.headingID}}" ng-click='updateClass(article.headingID)'>
+                  <h4 class="panel-title">
+                    <div class="item row">
+                      <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
+                        <p class="source">{{article.headingSource}}</p>
+                      </div>
+                      <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
+                        <p class="title">{{article.title}}</p>
+                      </div>
+                      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
+                        <p class="pubdate">{{article.pubdate}}</p>
+                      </div>
+                    </div>
+                  </h4>
+                </div>
+              </a>
+            <div id="{{article.headingControls}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{article.headingID}}">
+              <div class="panel-body">
+                <div class="description row">
+                  <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+                    <h1>{{article.title}}</h1>
+                    <p>{{article.descContent}}</p>
+                  </div><!--End of col-xs-12-->
+                </div><!--End of row-->
+              </div><!--End of panel-body-->
+            </div><!--End of collapseOne-->
+          </div><!--End of panel-default-->
+       </div><!--End of panel-group-->
+      </div><!--End of container-->
     <!--Module-->
     <script src="/ang.js"></script>
     <!--Controller-->
-        <script src='/Controllers/codecademy/ashiftController.js'></script>
-    <!--Directives-->
-    <script src="/Directives/codecademy/articleShift.js"></script>
-    <!--Custom-->
-    <script src='/javascripts/codecademy/ArticleShift.js'></script>
+    <script src='/Controllers/codecademy/ashiftController.js'></script>
   </body>
 </html>
