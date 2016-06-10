@@ -18,10 +18,10 @@ body {
   border-radius:0px;
 }
 
-.panel-default>.panel-heading, .panel-body{
+.panel-default>a>.panel-heading, .panel-body{
     background-color:rgba(206,220,206,.9);
 }
 
 .active{
-  background-color:rgba(143,168,143,.9);
+  background-color:rgba(143,168,143,.9)!important;
 }

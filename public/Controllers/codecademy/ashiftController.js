@@ -65,14 +65,9 @@ app.controller('ashiftController', ['$scope', function($scope){
                 pubdate:'Mar 22',
                 descContent:'United Airlines is to sell up to 30 Boeing 757s to freight operator FedEx Express, with deliveries of the twinjets set to start this year.'
             }]
-            
-    $scope.updateCurrent=function(){
-        $('.panel-ashift').on('show.bs.collapse', function () {
-             $(this).addClass('active');
-        });
-    
-        $('.panel-ashift').on('hide.bs.collapse', function () {
-             $(this).removeClass('active');
-        });
+        
+    $scope.updateClass = function(id){
+        $('.panel-heading').removeClass('active');
+        $('#'+id).addClass('active');
     }
 }]);
