@@ -57,8 +57,9 @@ body{
 }
 
 .feature{
-   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png'); 
    height:390px;
+   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/ac.png'); 
+   background-size:100% 390px;
 }
 
 .featureWM{
@@ -137,3 +138,10 @@ li.active-dot {
         width:164px;
     }
 }
+
+@media (min-width: 1596px) {
+    .featureWM{
+        width:30%;
+    }
+}
+
