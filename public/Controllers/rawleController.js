@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/flipBoard',
+                title:'Flipboard',
+                faImg:' fa-map',
+                faSize:' fa-3x',
+                desc:'Your personal magazine'
+            },
+            {
                 url:'codecademy/ArticleShift',
                 title:'Article Shift',
                 faImg:' fa-expand',

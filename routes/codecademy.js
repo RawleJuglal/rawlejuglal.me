@@ -74,4 +74,8 @@ router.get('/Shutterbugg', function( req, res, next){
     res.render('codecademy/Shutterbugg', { title: 'Shutterbugg Website'});
 });
 
+router.get('/FlipBoard', function( req, res, next){
+    res.render('codecademy/FlipBoard', { title: 'Flipboard Website'}); 
+});
+
 module.exports = router;
