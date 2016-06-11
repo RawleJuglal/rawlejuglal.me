@@ -78,4 +78,8 @@ router.get('/FlipBoard', function( req, res, next){
     res.render('codecademy/FlipBoard', { title: 'Flipboard Website'}); 
 });
 
+router.get('/SlotMachine', function( req, res, next){
+    res.render('codecademy/SlotMachine', { title: 'Slot Machine Website'});
+});
+
 module.exports = router;

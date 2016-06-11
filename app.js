@@ -24,6 +24,7 @@ var heartbeats = require('./routes/heartbeat');
 var posts = require('./routes/blog');
 var projects = require('./routes/codecademy');
 var portfolios = require('./routes/portfolio');
+var freeCodeProjects = require('./routes/freeCodeCamp');
 //-----------------------------------------------------------------------
 //instanciating app as an express object
 var app = express();
@@ -55,6 +56,8 @@ app.use('/heartbeat', heartbeats);
 app.use('/codecademy', projects);
 //when client submits base url/Portfolio responds with projects which requires ./routes/Portfolio seen above or go to file for more details
 app.use('/portfolio', portfolios);
+//when client submits base url/freeCodeCamp responds with projects which requires ./routes/Portfolio seen above or go to file for more details
+app.use('/freeCodeCamp', freeCodeProjects);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
