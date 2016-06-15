@@ -5,7 +5,7 @@
     var slotTwo;
     var slotThree;
     
-    var images = ["http://i.imgur.com/9H17QFk.png", "http://i.imgur.com/9RmpXTy.png", "http://i.imgur.com/VJnmtt5.png"];
+    var images = ["https://i.imgur.com/9H17QFk.png", "https://i.imgur.com/9RmpXTy.png", "https://i.imgur.com/VJnmtt5.png"];
     
     slotOne = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
     slotTwo = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
