@@ -1,0 +1,39 @@
+/*Rawle Styling Sheet*/
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:silver;
+}
+
+.no-pad{
+    margin:0px;
+    padding:0px;
+}
+
+.statusDiv{
+   margin-top: 4%; 
+}
+
+.counter {
+  display: inline;
+  margin-right: 10px;
+}
+
+.statusCol, .postCol{
+    margin-top:4%;    
+}
+
+#posts{
+    list-style:none;    
+}
+
+#posts li {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  padding:10px 20px 10px 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  min-height: 42px;
+}

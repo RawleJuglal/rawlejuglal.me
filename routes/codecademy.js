@@ -82,4 +82,8 @@ router.get('/SlotMachine', function( req, res, next){
     res.render('codecademy/SlotMachine', { title: 'Slot Machine Website'});
 });
 
+router.get('/StatusPost', function( req, res, next){
+    res.render('codecademy/statusPost', { title: 'Status Post Website'});
+});
+
 module.exports = router;
