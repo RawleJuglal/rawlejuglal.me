@@ -83,7 +83,7 @@ router.get('/SlotMachine', function( req, res, next){
 });
 
 router.get('/StatusPost', function( req, res, next){
-    res.render('codecademy/statusPost', { title: 'Status Post Website'});
+    res.render('codecademy/StatusPost', { title: 'Status Post Website'});
 });
 
 module.exports = router;
