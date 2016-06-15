@@ -15,29 +15,68 @@ body{
     box-shadow: inset 0 0 1em black, 0 0 1em silver;
 }
 
-.slotDiv{
-    margin:4% 0 0 0;
-    padding:2% 0;
-    background-color:#457f86;
-    border:2px solid white;
+.slotMachine{
+    min-height: 300px;
     border-radius:1em;
-    box-shadow: inset 0 0 1em black, 0 0 1em silver;
+    box-shadow: -10px 5px 30px white;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.slotMachine, .slotDiv{
+    margin-top:2%;
+}
+
+.loggerDiv, .spinnerDiv{
+    margin-top:8%;
+}
+
+.slots{
+    background-color:#457f86; 
+    padding-top:1%;
+    padding-bottom:1%;
+    border-radius: 1em;
+    border: 2px solid #fff;
 }
 
 .slot img{
     width:100%;
-    border:1px solid black;
-    box-shadow: inset 0 0 1em black, 0 0 1em gold;
+    height: 96.66px;
+    border-radius:1em;
+    border: 2px solid #215f1e;
+}
+
+.logger{
+    background-color:#457f86;
+    border-radius:1em;
+    border: 2px solid #fff;
+}
+
+.loggerDiv p{
+    margin:0px;
+    padding:0px;
+    line-height: 30px;
+    color:white;
+}
+
+.btn-slot{
+    padding:10px 40px;
+    background-color:#457f86;
+    color:white;
+}
+
+.btn-slot:hover{
+    background-color:transparent;
+    color:white;
 }
 
 @media (min-width: 768px) {
     .header img{
         width:75%;
-    }
-    
-    .slotDiv{
-       margin:2% 0 0 0; 
-       padding:1% 0;
     }
 }
 

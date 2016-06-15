@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/SlotMachine', function( req, res, next){
-    res.render('codecademy/SlotMachine', { title: 'Slot Machine Website'});
+    res.render('freecodecamp/SlotMachine', { title: 'Slot Machine Website'});
 });
 
 module.exports = router;
