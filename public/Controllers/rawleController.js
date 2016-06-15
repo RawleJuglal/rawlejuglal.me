@@ -10,6 +10,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 desc:'You gotta spin to win'
             },
             {
+                url:'codecademy/statusPost',
+                title:'Status Post',
+                faImg:' fa-tag',
+                faSize:' fa-4x',
+                desc:'What\'s on your mind'
+            },
+            {
                 url:'codecademy/flipBoard',
                 title:'Flipboard',
                 faImg:' fa-map',
