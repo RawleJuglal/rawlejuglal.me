@@ -9,4 +9,8 @@ router.get('/SlotMachine', function( req, res, next){
     res.render('freecodecamp/SlotMachine', { title: 'Slot Machine Website'});
 });
 
+router.get('/RandomQuoteMachine', function( req, res, next){
+  res.render('freecodecamp/RandomQuoteMachine', { title: 'Wrestling Quote Website'});  
+});
+
 module.exports = router;

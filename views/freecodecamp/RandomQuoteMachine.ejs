@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title><%= title %></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href='/stylesheets/freecodecamp/randomQuoteMachine.css'>
+    <!-- Latest compiled and minified JavaScript -->
+    <!--JQuery-->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src='/bower_components/jquery-ui/jquery-ui.min.js'></script>
+    <!--Bootstrap-->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='/bower_components/angular/angular.min.js'></script>
+  </head>
+  <body>
+    <div class='header'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-12'>
+            <h1 class='text-center'>Random Wrestling Quote Generator</h1>
+            <p class='text-center'>Some of the greatest quotes of all time in wrestling </p>
+          </div><!--End of col-xs-12-->       
+        </div><!--End of row-->
+      </div><!--End of container-->
+    </div><!--End of header-->
+    <div class='buttonDiv'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-12 text-center'>
+            <button id="getQuote" class="btn btn-default btn-gradient">Get New Quote</button>
+          </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+      </div><!--End of container-->
+    </div><!--End of buttonDiv-->
+    <div id='quoteDiv'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2'>
+            <div id=quoteBox>
+              
+            </div><!--End of quoteBox-->
+          </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+      </div><!--End of container-->
+    </div><!--End of quoteDiv-->
+    <div id='tweetDiv'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-12'>
+            <div id="twtbox" class='text-center'>
+              <button class='btn btn-primary' onclick="tweetIt()"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet it!</button>
+            </div><!--End of twtbox-->
+          </div><!--End of col-xs-12-->
+        </div><!--End of row-->
+      </div><!--End of container-->
+    </div><!--End of tweetDiv-->
+    <!--Custom-->
+    <script src='/javascripts/freecodecamp/randomQuoteMachine.js'></script>
+    
+  </body>
+</html>

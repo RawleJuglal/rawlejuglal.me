@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/randomQuoteMachine',
+                title:'Random Quote Machine',
+                faImg:' fa-quote-right',
+                faSize:' fa-2x',
+                desc:'Best quotes in WWE history'
+            },
+            {
                 url:'freecodecamp/slotMachine',
                 title:'Slot Machine',
                 faImg:' fa-money',
