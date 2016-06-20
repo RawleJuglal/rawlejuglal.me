@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/calculator',
+                title:'Calculator',
+                faImg:' fa-calculator',
+                faSize:' fa-5x',
+                desc:'Math made easier'
+            },
+            {
                 url:'freecodecamp/randomQuoteMachine',
                 title:'Random Quote Machine',
                 faImg:' fa-quote-right',
