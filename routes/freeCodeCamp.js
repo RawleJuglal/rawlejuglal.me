@@ -13,4 +13,8 @@ router.get('/RandomQuoteMachine', function( req, res, next){
   res.render('freecodecamp/RandomQuoteMachine', { title: 'Wrestling Quote Website'});  
 });
 
+router.get('/Calculator', function( req, res, next){
+  res.render('freecodecamp/Calculator', { title: 'Calculator Website'});
+});
+
 module.exports = router;
