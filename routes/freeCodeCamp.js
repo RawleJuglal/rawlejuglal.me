@@ -17,4 +17,8 @@ router.get('/Calculator', function( req, res, next){
   res.render('freecodecamp/Calculator', { title: 'Calculator Website'});
 });
 
+router.get('/Weather', function( req, res, next){
+  res.render('freecodecamp/Weather', { title: 'Local Weather App'});
+});
+
 module.exports = router;
