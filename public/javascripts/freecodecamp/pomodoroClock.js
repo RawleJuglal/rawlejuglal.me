@@ -30,11 +30,13 @@ $(document).ready(function(){
               $('#startButton').attr("id", "stopButton").text("Stop");
               if(($currentPeriod == 'Session')&&($windowsize>=768))
                 {
+                    $('.timerDiv').css('background-color', 'black');
                     $('#timerBox').css('border','2px solid green');
                 }
               else
                 {
                     $('.timerDiv').css('background-color','green');
+                    $('#timerBox').css('border','0');
                 }
               intervalid = startTimer();
             }
@@ -44,11 +46,13 @@ $(document).ready(function(){
               var $sLeft = Number($('#countdownClock span:nth-child(2)').text());
               if(($currentPeriod == 'Session')&&($windowsize>=768))
                 {
+                    $('.timerDiv').css('background-color', 'black');
                     $('#timerBox').css('border','2px solid green');
                 }
               else
                 {
                     $('.timerDiv').css('background-color','green');
+                    $('#timerBox').css('border','0');
                 }
               if($mLeft == 0 && $sLeft ==0)
                 {
@@ -73,11 +77,13 @@ $(document).ready(function(){
           updateCountdown(prevTime, 0);
           if($windowsize>=768)
                 {
+                    $('.timerDiv').css('background-color', 'black');
                     $('#timerBox').css('border','2px solid white');
                 }
           else
                 {
                     $('.timerDiv').css('background-color','black');
+                    $('#timerBox').css('border','0');
                 }
           howManyBreak = 0;
         }
@@ -229,11 +235,13 @@ $(document).ready(function(){
        var $currentPeriod = $('#currentPeriod').text();
        if(($currentPeriod == 'Session')&&($windowsize>=768))
                 {
+                    $('.timerDiv').css('background-color', 'black');
                     $('#timerBox').css('border','2px solid red');
                 }
               else
                 {
                     $('.timerDiv').css('background-color','red');
+                    $('#timerBox').css('border', '0');
                 }  
       $('#currentPeriod').text("Break");
       var breakTime = Number($('#brkStartTime').text());
