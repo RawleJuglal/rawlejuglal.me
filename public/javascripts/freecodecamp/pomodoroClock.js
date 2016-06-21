@@ -44,16 +44,38 @@ $(document).ready(function(){
             {
               var $mLeft =Number($('#countdownClock span:first-child').text());
               var $sLeft = Number($('#countdownClock span:nth-child(2)').text());
-              if(($currentPeriod == 'Session')&&($windowsize>=768))
+              if($currentPeriod == 'Session')
                 {
-                    $('.timerDiv').css('background-color', 'black');
-                    $('#timerBox').css('border','2px solid green');
+                  if($windowsize>=768)
+                    {
+                        $('.timerDiv').css('background-color', 'black');
+                        $('#timerBox').css('border','2px solid green');
+                    }
+                  else
+                    {
+                        $('.timerDiv').css('background-color','green');
+                        $('#timerBox').css('border','0');
+                    }
+                }
+              else if($currentPeriod == 'Break')
+                {
+                  if($windowsize>=768)
+                    {
+                        $('.timerDiv').css('background-color', 'black');
+                        $('#timerBox').css('border','2px solid red');
+                    }
+                  else
+                    {
+                        $('.timerDiv').css('background-color','red');
+                        $('#timerBox').css('border','0');
+                    }
                 }
               else
                 {
-                    $('.timerDiv').css('background-color','green');
-                    $('#timerBox').css('border','0');
+                  alert("I've got a bigger problem during the break");
                 }
+              
+              
               if($mLeft == 0 && $sLeft ==0)
                 {
                   var currentSession = Number($('#sesStartTime').text());
