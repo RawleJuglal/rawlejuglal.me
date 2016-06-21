@@ -21,4 +21,8 @@ router.get('/Weather', function( req, res, next){
   res.render('freecodecamp/Weather', { title: 'Local Weather App'});
 });
 
+router.get('/PomodoroClock', function( req, res, next){
+  res.render('freecodecamp/PomodoroClock', { title: 'Pomodoro Clock'});
+});
+
 module.exports = router;

@@ -1,0 +1,20 @@
+/*Rawle Styling Sheet*/
+
+body{
+    margin:0px;
+    padding:0px;
+    color:white;
+    background-color:black;
+}
+
+.timerDiv{
+    height:411px;
+}
+
+.numSpacer{
+    padding:0px 8px 0px 8px;
+}
+
+#countdownClock{
+    font-size:3em;
+}
