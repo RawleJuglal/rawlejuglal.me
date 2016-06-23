@@ -3,12 +3,14 @@ $(document).ready(function(){
     var units = 'imperial';
     
     function getWeather(lat, lon){
-        var accessOWM = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units='+units+'&APPID='+apikey;
+        var accessOWM = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units='+units+'&APPID='+apikey;
+        console.log(accessOWM);
         $.getJSON(accessOWM, function(json){
+            console.log('function called');
            console.log(json); 
         });
     }
-       if ("geolocation" in navigator) {
+/*       if ("geolocation" in navigator) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var latitude = Math.round(position.coords.latitude*100)/100;
             var longitude = Math.round(position.coords.longitude*100)/100;
@@ -16,5 +18,8 @@ $(document).ready(function(){
           });
         } else {
             console.log('Geolocation Not Available');
-        }
+        }*/
+        
+        getWeather(35,-97);
 });
+
