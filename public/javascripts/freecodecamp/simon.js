@@ -1,5 +1,6 @@
-var compArray = [];
+var compArray = [],userArray = [], tempo = 3000;
 
+var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https://s3.amazonaws.com/freecodecamp/simonSound2.mp3','https://s3.amazonaws.com/freecodecamp/simonSound3.mp3','https://s3.amazonaws.com/freecodecamp/simonSound4.mp3'];
    
    function startGame(){
       $('.btn-success, .btn-danger').prop('disabled', true);
@@ -7,10 +8,14 @@ var compArray = [];
       console.log('This is strict: '+ strict);
       var sequence = compArray;
       console.log(sequence);
+      playComputerSequence(sequence, tempo);
    }
    
    function reset(){
-      
+      compArray = [];
+      userArray = [];
+      $('.count span').text('1');
+      $('.btn-success, .btn-danger').prop('disabled', false);
    }
    
    function toggleStrict(){
@@ -24,7 +29,9 @@ var compArray = [];
             $('.fa').removeClass('fa-unlock-alt').addClass('fa-lock');
          }
    }
-   
+
+/*INTERFACE FUNCTIONS ABOVE THIS LINE -------------------------*/
+
    function getClassList(){
       return document.getElementById('lock').className.split(/\s+/);
    }
@@ -63,3 +70,102 @@ var compArray = [];
      return Math.floor(Math.random() * (max - min)) + min;
    }
    
+   function playComputerSequence(seq,speed){
+      var count = Number($('.count span').text());
+      var i = 0;
+      var interval = setInterval(function(){
+         $('#'+seq[i]).addClass('on');
+         var audio = new Audio(audioArray[seq[i]-1]);
+         setTimeout(function(){
+            audio.play();
+            $('#'+seq[i]).removeClass('on');
+            i++;
+         },500)
+         setTimeout(function(){
+            if(i == count)
+            {
+               clearInterval(interval);
+            }
+         },500);
+      },speed);
+   }
+   
+   function recordUserChoice(item){
+      userArray.push(item);
+      var audio = new Audio(audioArray[item-1]);
+      setTimeout(function(){
+         audio.play();
+      },500);
+      console.log('About to enter checkSequence');
+      checkSequence(userArray);
+      
+      
+   }
+
+   function checkSequence(uArray){
+      console.log(uArray);
+      var count = Number($('.count span').text());
+      console.log(uArray[uArray.length-1]);
+      console.log(compArray[uArray.length-1]);
+      if(uArray[uArray.length-1] != compArray[uArray.length-1])
+         {
+            if(checkStrict())
+               {
+                  reset();
+               }
+            else
+               {
+                  userArray = [];
+                  alert('Incorrect Choice, try sequence again');
+               }
+         }
+      else
+         {
+            console.log('correct');
+            if(uArray.length == 20)
+               {
+                  setTimeout(function(){
+                     alert("You are a winner");
+                  },800)
+               }
+            else if(uArray.length == count)
+               {
+                  $('.count span').text(count+1);
+                  if(count == 8)
+                     {  
+                        userArray = [];
+                        tempo = 2000;
+                        setTimeout(function(){
+                           playComputerSequence(compArray, tempo);
+                        },500);
+                     }
+                  else if(count == 15)
+                     {
+                        userArray = [];
+                        tempo = 1200;
+                        setTimeout(function(){
+                           playComputerSequence(compArray, tempo);
+                        },500);
+                     }
+                  else
+                     {
+                        userArray = [];
+                        setTimeout(function(){
+                           playComputerSequence(compArray, tempo);
+                        },500);
+                     }
+               }
+            else
+               {
+                  console.log('waiting for more selections');
+               }
+         }
+   }
+   
+   function unbindEvents(id){
+      $('#'+id).off('click');
+   };
+   
+   function bindEvents(id){
+      $('#'+id).on('click',recordUserChoice(id));
+   };
