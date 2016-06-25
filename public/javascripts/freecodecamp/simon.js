@@ -5,7 +5,6 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
    function startGame(){
       $('.btn-success, .btn-danger').prop('disabled', true);
       var strict = checkStrict(createCompSequence(0,20));
-      console.log('This is strict: '+ strict);
       var sequence = compArray;
       console.log(sequence);
       playComputerSequence(sequence, tempo);
@@ -71,6 +70,11 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
    }
    
    function playComputerSequence(seq,speed){
+      $('.field').each(function(){
+         $(this).on().off('click',function(e){
+            e.preventDefault();
+         });
+      });
       var count = Number($('.count span').text());
       var i = 0;
       var interval = setInterval(function(){
@@ -88,26 +92,25 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
             }
          },500);
       },speed);
+      $('.field').each(function(){
+         $(this).off().on('click',recordUserChoice);
+      });
    }
    
-   function recordUserChoice(item){
-      userArray.push(item);
-      var audio = new Audio(audioArray[item-1]);
+   function recordUserChoice(){
+      userArray.push(this.id);
+      var audio = new Audio(audioArray[this.id-1]);
       setTimeout(function(){
          audio.play();
       },500);
-      console.log('About to enter checkSequence');
       checkSequence(userArray);
       
       
    }
 
    function checkSequence(uArray){
-      console.log(uArray);
       var count = Number($('.count span').text());
-      console.log(uArray[uArray.length-1]);
-      console.log(compArray[uArray.length-1]);
-      if(uArray[uArray.length-1] != compArray[uArray.length-1])
+      if(Number(uArray[uArray.length-1]) != compArray[uArray.length-1])
          {
             if(checkStrict())
                {
@@ -121,7 +124,6 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
          }
       else
          {
-            console.log('correct');
             if(uArray.length == 20)
                {
                   setTimeout(function(){
@@ -161,11 +163,3 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
                }
          }
    }
-   
-   function unbindEvents(id){
-      $('#'+id).off('click');
-   };
-   
-   function bindEvents(id){
-      $('#'+id).on('click',recordUserChoice(id));
-   };
