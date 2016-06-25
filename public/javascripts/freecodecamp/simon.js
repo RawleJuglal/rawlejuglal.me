@@ -70,11 +70,12 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
    }
    
    function playComputerSequence(seq,speed){
-      $('.field').each(function(){
+      //Preventing pressing not working
+      /*$('.field').each(function(){
          $(this).on().off('click',function(e){
             e.preventDefault();
          });
-      });
+      });*/
       var count = Number($('.count span').text());
       var i = 0;
       var interval = setInterval(function(){
