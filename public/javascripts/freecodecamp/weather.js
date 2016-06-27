@@ -5,10 +5,10 @@ $(document).ready(function(){
           navigator.geolocation.getCurrentPosition(function(position) {
             var latitude = Math.round(position.coords.latitude*100)/100;
             var longitude = Math.round(position.coords.longitude*100)/100;
-           return getWeather(latitude, longitude);
+           getWeather(latitude, longitude);
           });
         } else {
-            return 'Geolocation Not Available';
+           console.log('Geolocation Not Available');
         }
     
     function getWeather(lat, lon){
