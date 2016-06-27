@@ -1,25 +1,20 @@
 $(document).ready(function(){
-    var apikey = '9575f3355ae129dc91424b5712a7695e';
-    var units = 'imperial';
+    var apikey = '677d725847b668a26122a0be351c282c';
     
-    function getWeather(lat, lon){
-        var accessOWM = 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units='+units+'&APPID='+apikey;
-        console.log(accessOWM);
-        $.getJSON(accessOWM, function(json){
-            console.log('function called');
-           console.log(json); 
-        });
-    }
-/*       if ("geolocation" in navigator) {
+    if ("geolocation" in navigator) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var latitude = Math.round(position.coords.latitude*100)/100;
             var longitude = Math.round(position.coords.longitude*100)/100;
-            getWeather(latitude, longitude);
+           return getWeather(latitude, longitude);
           });
         } else {
-            console.log('Geolocation Not Available');
-        }*/
-        
-        getWeather(35,-97);
+            return 'Geolocation Not Available';
+        }
+    
+    function getWeather(lat, lon){
+       var accessForecast = `https://api.forecast.io/forecast/`+apikey+`/${lat},${lon}`;
+            $.getJSON(accessForecast, function(json){
+                console.log(json);
+            });
+       }
 });
-
