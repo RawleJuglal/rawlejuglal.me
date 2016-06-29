@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/simon',
+                title:'Simon Says',
+                faImg:' fa-gamepad',
+                faSize:' fa-4x',
+                desc:'Can you follow directions'
+            },
+            {
                 url:'freecodecamp/pomodoroClock',
                 title:'Pomodoro Clock',
                 faImg:' fa-clock-o',

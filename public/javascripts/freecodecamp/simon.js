@@ -1,4 +1,4 @@
-var compArray = [],userArray = [], tempo = 3000;
+var compArray = [],userArray = [], tempo = 3000, gamestate = 0;
 
 var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https://s3.amazonaws.com/freecodecamp/simonSound2.mp3','https://s3.amazonaws.com/freecodecamp/simonSound3.mp3','https://s3.amazonaws.com/freecodecamp/simonSound4.mp3'];
    
@@ -8,6 +8,9 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
       var sequence = compArray;
       console.log(sequence);
       playComputerSequence(sequence, tempo);
+      $('.field').each(function(){
+         $(this).off().on('click',recordUserChoice);
+      });
    }
    
    function reset(){
@@ -70,12 +73,7 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
    }
    
    function playComputerSequence(seq,speed){
-      //Preventing pressing not working
-      /*$('.field').each(function(){
-         $(this).on().off('click',function(e){
-            e.preventDefault();
-         });
-      });*/
+      gamestate =1;
       var count = Number($('.count span').text());
       var i = 0;
       var interval = setInterval(function(){
@@ -89,24 +87,29 @@ var audioArray = ['https://s3.amazonaws.com/freecodecamp/simonSound1.mp3','https
          setTimeout(function(){
             if(i == count)
             {
+               gamestate = 0;
                clearInterval(interval);
             }
          },500);
       },speed);
-      $('.field').each(function(){
-         $(this).off().on('click',recordUserChoice);
-      });
    }
    
    function recordUserChoice(){
-      userArray.push(this.id);
-      var audio = new Audio(audioArray[this.id-1]);
-      setTimeout(function(){
-         audio.play();
-      },500);
-      checkSequence(userArray);
-      
-      
+      console.log(gamestate);
+      if(gamestate === 1)
+         {
+            return;
+         }
+      else
+         {
+            console.log('in else statement');
+            userArray.push(this.id);
+            var audio = new Audio(audioArray[this.id-1]);
+            setTimeout(function(){
+               audio.play();
+            },500);
+            checkSequence(userArray);
+         }
    }
 
    function checkSequence(uArray){
