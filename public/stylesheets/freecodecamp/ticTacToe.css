@@ -1,0 +1,107 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    background-color:#1060E3;
+    color:white;
+    text-shadow:2px 2px black;
+}
+
+.gameDiv{
+    margin:4%;
+}
+
+td{
+    width:33.3%;
+    font-size:4em;
+}
+
+.cell{
+    min-height: 97px;
+}
+
+#winnerBox{
+    border:2px solid silver;
+    color:white;
+    background-color:#1060E3;
+    min-height: 72px;
+}
+#begin
+{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:100;
+  background-color:rgba(100,100,100,0.9);
+}
+
+#menu
+{
+  width:300px;
+  height:200px;
+  background-color:white;
+  color:black;
+  margin:0 auto;
+  margin-top:100px;
+  box-shadow:0px 0px 10px black;
+}
+
+#menu div
+{
+  font-size:90px;
+  text-align:center;
+  transition:.2s ease all;
+}
+
+#menu div:hover
+{
+  color:white;
+  background-color:blue;
+  box-shadow:0px 0px 10px black;
+}
+
+p
+{
+  display:inline;font-size:3em;
+}
+
+#x
+{
+   display:inline-block;
+  width:75px;
+  height:100px;
+  line-height:100px;
+  border:1px solid black;
+  position:relative;
+  margin-left:20px;
+  margin-right:10px;
+  margin-top:50px;
+}
+
+#o{
+  position:relative;
+  display:inline-block;
+  width:75px;
+  height:100px;
+  line-height:100px;
+  border:1px solid black;
+  margin-left:20px;
+  margin-top:50px;
+ 
+}
+
+#block
+{
+  visibility:hidden;
+  z-index:1000;
+  background-color:rgb(0,0,0,1);
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}

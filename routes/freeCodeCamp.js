@@ -28,4 +28,9 @@ router.get('/PomodoroClock', function( req, res, next){
 router.get('/Simon', function( req, res, next){
   res.render('freecodecamp/Simon', { title: 'Simon Says'});
 });
+
+router.get('/TicTacToe', function( req, res, next){
+  res.render('freecodecamp/TicTacToe', { title: 'Unbeatable Tic Tac Toe'});
+});
+
 module.exports = router;

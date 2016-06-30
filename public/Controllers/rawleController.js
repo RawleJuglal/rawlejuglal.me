@@ -2,6 +2,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     $scope.test = 'is working';
     
     $scope.notes = [
+        {
+                url:'freecodecamp/ticTacToe',
+                title:'Unbeatable Tic Tac Toe',
+                faImg:' fa-table',
+                faSize:' fa-3x',
+                desc:'Do the impossible'
+            },
             {
                 url:'freecodecamp/simon',
                 title:'Simon Says',
