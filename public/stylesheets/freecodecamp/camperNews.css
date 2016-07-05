@@ -1,0 +1,14 @@
+body{
+  background:url("https://s3.amazonaws.com/freecodecamp/wide-social-banner.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header h1{
+  font-family: 'Vast Shadow', cursive;
+  margin-top:4%;
+  margin-bottom:1%;
+  color:red;
+}

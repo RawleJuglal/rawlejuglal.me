@@ -33,4 +33,8 @@ router.get('/TicTacToe', function( req, res, next){
   res.render('freecodecamp/TicTacToe', { title: 'Unbeatable Tic Tac Toe'});
 });
 
+router.get('/CamperNews', function( req, res, next){
+  res.render('freecodecamp/CamperNews', { title: 'Camper News Site'});  
+});
+
 module.exports = router;
