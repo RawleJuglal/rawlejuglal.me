@@ -1,0 +1,28 @@
+body{
+    background-color:maroon;
+    color:white;
+}
+
+.heading h1{
+    font-family: 'Slabo 27px', serif;
+}
+
+.results-row{
+	position:absolute;
+	top:25%;
+	width:100%;
+}
+.list-group-item{
+	min-height:100px;
+}
+
+.link-header{
+	font-weight:bold;
+	display:block;
+	font-size:1.4em;
+}
+
+.link-body{
+	font-style: oblique;
+  color:tan;
+}

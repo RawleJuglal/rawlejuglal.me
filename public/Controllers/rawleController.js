@@ -2,7 +2,14 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     $scope.test = 'is working';
     
     $scope.notes = [
-        {
+            {
+                url:'freecodecamp/wikiViewer',
+                title:'Wiki Viewer',
+                faImg:' fa-wikipedia-w',
+                faSize:' fa-3x',
+                desc:'The free encyclopedia'
+            },
+            {
                 url:'freecodecamp/ticTacToe',
                 title:'Unbeatable Tic Tac Toe',
                 faImg:' fa-table',
