@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'public/Controllers/angTutorial/phoneCatController.js',
-      'tests/angTutorial/phonecatApp.spec.js'
+      './public/Controllers/angTutorial/phoneCatController.js',
+      './tests/angTutorial/phonecatApp.spec.js'
     ],
 
 
