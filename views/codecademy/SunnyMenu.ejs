@@ -33,62 +33,75 @@
     <div class="main" ng-controller="sunnyController">
         <div class="container">
             <div id='menuDiv'>
-                <h1>Specials for {{ today | date }}</h1>
-                <h2>Appetizers</h2>
-                <div class="media" ng-repeat="appetizer in appetizers">
-                  <div class="media-left">
-                      <img class="media-object" ng-src="{{appetizer.img}}" height="100px" width="100px">
-                  </div><!--End of media-left-->
-                  <div class="media-body">
-                    <div class="appetizers row" >
-                      <div class="item col-md-9">
-                        <h3 class="name">{{appetizer.name}} </h3>
-                        <p class="description">{{appetizer.description}} </p>
-                      </div><!--End of item-->
-                      <div class="price col-md-3">
-                        <p class="price"> {{appetizer.price | currency }}</p>
-                      </div><!--End of price-->
-                    </div><!--End of row-->
-                  </div><!--End of media-body-->
-                </div><!--End of media-->
-                <h2>Main Dishes</h2>
-                <div class="media" ng-repeat="main in mains">
-                  <div class="media-left">
-                      <img class="media-object" ng-src="{{main.img}}" height="100px" width="100px">
-                  </div><!--End of media-left-->
-                  <div class="media-body">
-                    <div class="mains row" >
-                          <div class="item col-md-9">
-                            <h3 class="name">{{main.name}} </h3>
-                            <p class="description">{{main.description}} </p>
-                          </div><!--End of item-->
-                          <div class="price col-md-3">
-                            <p class="price"> {{main.price | currency }}</p>
-                          </div><!--End of price-->
-                    </div><!--End of row-->
-                  </div><!--End of media-body-->
-                </div><!--End of media-->     
-        			 
-                <h2>Extras</h2>
-               <div class="media" ng-repeat="extra in extras">
-                  <div class="media-left">
-                      <img class="media-object" ng-src="{{extra.img}}" height="100px" width="100px">
-                  </div><!--End of media-left-->
-                  <div class="media-body">
-                    <div class="mains row" >
+              <div class='row'>
+                <div class='col-xs-12'>
+                  <h1>Specials for {{ today | date }}</h1>
+                </div><!--End of col-xs-12-->
+              </div><!--End of row-->
+              <div class='row'>
+                <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+                  <h2>Appetizers</h2>
+                  <div class="media" ng-repeat="appetizer in appetizers">
+                    <div class="media-left">
+                        <img class="media-object" ng-src="{{appetizer.img}}" height="100px" width="100px">
+                    </div><!--End of media-left-->
+                    <div class="media-body">
+                      <div class="mains row" >
+                            <div class="item col-md-9">
+                              <h3 class="name">{{appetizer.name}} </h3>
+                              <p class="description">{{appetizer.description}} </p>
+                            </div><!--End of item-->
+                            <div class="col-md-3">
+                              <p class="price"> {{appetizer.price | currency }}</p>
+                            </div><!--End of price-->
+                      </div><!--End of row-->
+                    </div><!--End of media-body-->
+                  </div><!--End of media--> 
+                </div><!--End of col-xs-12-->
+              </div><!--End of row-->
+               <div class='row'>
+                 <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+                    <h2>Main Dishes</h2>
+                    <div class="media" ng-repeat="main in mains">
+                      <div class="media-left">
+                          <img class="media-object" ng-src="{{main.img}}" height="100px" width="100px">
+                      </div><!--End of media-left-->
+                      <div class="media-body">
+                        <div class="mains row" >
+                              <div class="item col-md-9">
+                                <h3 class="name">{{main.name}} </h3>
+                                <p class="description">{{main.description}} </p>
+                              </div><!--End of item-->
+                              <div class="col-md-3">
+                                <p class="price"> {{main.price | currency }}</p>
+                              </div><!--End of price-->
+                        </div><!--End of row-->
+                      </div><!--End of media-body-->
+                    </div><!--End of media--> 
+                 </div><!--End of col-xs-12-->
+               </div> <!--End of row-->
+               <div class='row'>
+                 <div class='col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2'>
+                    <h2>Extras</h2>
+                    <div class="media" ng-repeat="extra in extras">
+                      <div class="media-left">
+                          <img class="media-object" ng-src="{{extra.img}}" height="100px" width="100px">
+                      </div><!--End of media-left-->
+                      <div class="media-body">
+                        <div class="mains row" >
                           <div class="item col-md-9">
                             <h3 class="name">{{extra.name}} </h3>
                           </div><!--End of item-->
-                          <div class="price col-md-3">
+                          <div class="col-md-3">
                             <p class="price"> {{extra.price | currency }}</p>
                           </div><!--End of price-->
-                    </div><!--End of mains-->
-                  </div><!--End of media-body-->
-                </div><!--End of media-->
+                        </div><!--End of mains-->
+                      </div><!--End of media-body-->
+                    </div><!--End of media-->
+                 </div><!--End of col-xs-12-->
+               </div> <!--End of row-->
             </div><!--End of menuDiv-->
-              
-            
-          </div><!--End of container-->
+          </div><!--End of fluid-container-->
         </div><!--End of main-->
     
         <div class="footer">
