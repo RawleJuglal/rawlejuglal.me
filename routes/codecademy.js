@@ -87,4 +87,8 @@ router.get('/StatusPost', function( req, res, next){
 });
 
 
+router.get('/SunnyMenu', function(req, res, next){
+   res.render('codecademy/SunnyMenu', {title: 'Sunny Side Up Menu'}); 
+});
+
 module.exports = router;
