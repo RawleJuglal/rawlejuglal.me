@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/sunnyMenu',
+                title:'Sunny Side Up Menu',
+                faImg:' fa-bars',
+                faSize:' fa-3x',
+                desc:'The most important meal'
+            },
+            {
                 url:'freecodecamp/wikiViewer',
                 title:'Wiki Viewer',
                 faImg:' fa-wikipedia-w',
