@@ -95,4 +95,8 @@ router.get('/LuchaUnderground', function(req, res){
     res.render('codecademy/LuchaUnderground', {title:'Lucha Underground Plug'});
 });
 
+router.get('/CONCACAFR5', function(req, res){
+    res.render('codecademy/CONCACAFR5', {title:'CONCACAF Round 5'});    
+});
+
 module.exports = router;

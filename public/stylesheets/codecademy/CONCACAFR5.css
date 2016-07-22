@@ -1,0 +1,45 @@
+.no-pad{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background: url(http://wallpapercave.com/wp/4iwpqjq.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+button{
+    background-color:transparent;
+    color:black;
+}
+
+img{
+    margin-top:3px;
+}
+
+.main .container{
+    box-shadow:3px 3px 3px black;
+}
+
+#match{
+    background-color:rgba(255,255,255,.75);
+    border:1px solid black;
+}
+
+#matchInfo{
+    margin:10px 0px;
+}
+
+.score span{
+  font-size:2em;
+  line-height: 106px;
+  color:black;
+}
+
+.subrow{
+  margin:12px 0px;
+}
