@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/concacafr5',
+                title:'CONCACAF Roud 5',
+                faImg:' fa-futbol-o',
+                faSize:' fa-4x',
+                desc:'I believe..'
+            },
+            {
                 url:'codecademy/luchaUnderground',
                 title:'Lucha Underground Plug',
                 faImg:' fa-television',
