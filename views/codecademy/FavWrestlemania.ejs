@@ -41,10 +41,10 @@
             <div class='row'>
                <div ng-repeat="product in products" class=" col-xs-12 col-md-6"> 
                   <div class="thumbnail"> 
-                    <a href='{{product.link}}'><img ng-src="{{ product.cover }}"> 
-                      <p class="title">{{ product.name }}</p></a> 
+                    <a href='{{product.link}}'><img ng-src="{{ product.cover }}"></a>
+                    <a href='{{product.link}}'><p class="title text-center">{{ product.name }}</p></a>
                     <p class="order">{{ product.order}}</p> 
-                    <p class="date">{{ product.pubdate | date }}</p>
+                    <p class="date text-center">{{ product.pubdate | date }}</p>
                     <div class="rating"> 
                       <p class="likes" ng-click="plusOne($index)">+{{product.likes}} </p>
                       <p class="likes" ng-click="minusOne($index)">-{{product.dislikes}} </p>

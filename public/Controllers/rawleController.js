@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/favWrestlemania',
+                title:'Rate your favorite Wrestlemania',
+                faImg:' fa-star',
+                faSize:' fa-3x',
+                desc:'It\'s Wrestlemania Time!'
+            },
+            {
                 url:'codecademy/concacafr5',
                 title:'CONCACAF Roud 5',
                 faImg:' fa-futbol-o',
