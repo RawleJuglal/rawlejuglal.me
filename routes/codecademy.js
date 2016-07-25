@@ -99,4 +99,8 @@ router.get('/CONCACAFR5', function(req, res){
     res.render('codecademy/CONCACAFR5', {title:'CONCACAF Round 5'});    
 });
 
+router.get('/favWrestlemania', function (req, res){
+  res.render('codecademy/FavWrestlemania', {title: 'Rate Your Favorite Wrestlemania'});
+});
+
 module.exports = router;
