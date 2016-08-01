@@ -16,7 +16,25 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 //This middleware is used for parsing body content into more usable data
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
+if (!process.env.MONGODB_URI) {
+  var mongoUri = 'mongodb://heroku_rfcxc5mm:tla5gdjq9jn2tib6mom717mrjt@ds031925.mlab.com:31925/heroku_rfcxc5mm'
+} else {
+  var mongoUri = process.env.MONGODB_URI
+}
+
+mongoose.connect(mongoUri);
+
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+
+db.once('open', dbCallback);
+
+function dbCallback() {
+  console.log('connection success');
+}
 //This middleware is used to respond to request made by client
 var routes = require('./routes/index');
 var users = require('./routes/users');
