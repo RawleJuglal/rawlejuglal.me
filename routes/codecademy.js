@@ -103,4 +103,8 @@ router.get('/favWrestlemania', function (req, res){
   res.render('codecademy/FavWrestlemania', {title: 'Rate Your Favorite Wrestlemania'});
 });
 
+router.get('/SuggestionBox', function(req, res){
+   res.render('codecademy/SuggestionBox', {title: 'Suggestion Box'}); 
+});
+
 module.exports = router;

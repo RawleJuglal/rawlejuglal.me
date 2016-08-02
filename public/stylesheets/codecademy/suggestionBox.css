@@ -1,0 +1,95 @@
+.no-pad{
+    margin:0;
+    padding:0;
+}
+
+.img-responsive{
+    margin:0 auto;    
+}
+
+.headerBox{
+    background-image:url('https://farm4.staticflickr.com/3754/8880731807_6d44687445_o_d.jpg');
+    background-size:cover;
+    height:84px;
+}
+
+.headerBox h1{
+    font-family: 'Niconne', cursive;
+    color:white;
+    text-shadow:2px 2px black;
+    line-height:84px;
+}
+
+.container{
+    background-color:#00012E;
+    padding-bottom:24px;
+}
+
+form h3{
+    color:white;
+}
+
+input{
+    margin:6px 0px;
+}
+
+.ideaBox{
+    position:relative;
+    margin-top:12px;
+    background-color:white;
+    box-shadow:4px 4px 2px maroon;
+    height:400px;
+}
+
+.ideaBox img{
+    padding:12px 0px;
+    width:90%;
+    height:250px;
+}
+
+.interfaceBox{
+    position:absolute;
+    bottom:5px;
+    width:100%;
+}
+
+.interfaceBox a{
+    margin:8px 4px 0 0;
+}
+
+i{
+    margin:4px 4px;
+    color:red;
+}
+
+.commentTitle h3{
+    color:white;
+}
+
+.commentContainer{
+    background-color:white;
+    width:100%;
+    border:3px solid maroon;
+    margin-bottom:8px;
+    min-height:50px;
+}
+
+.thumbsUp i{
+    color:black;
+    line-height:20px;
+}
+
+.thumbsUp span{
+    line-height:50px;
+}
+
+.commentBody span{
+    font-size:2.25em;
+}
+
+@media only screen and (max-width : 768px) { 
+    
+    .commentBody span{
+        font-size:1em;    
+    }
+}
