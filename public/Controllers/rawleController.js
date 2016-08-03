@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'codecademy/bplScores',
+                title:'Bpl Scores Week 24',
+                faImg:' fa-futbol-o',
+                faSize:' fa-3x',
+                desc:'English Premier League'
+            },
+            {
                 url:'codecademy/favWrestlemania',
                 title:'Rate your favorite Wrestlemania',
                 faImg:' fa-star',
