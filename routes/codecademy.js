@@ -107,4 +107,8 @@ router.get('/SuggestionBox', function(req, res){
    res.render('codecademy/SuggestionBox', {title: 'Suggestion Box'}); 
 });
 
+router.get('/BplScores', function(req, res){
+   res.render('codecademy/BplScores', {title: 'BPL Full Score Sheet'}); 
+});
+
 module.exports = router;
