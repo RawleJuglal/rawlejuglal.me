@@ -1,0 +1,9 @@
+app.directive('scoreBoard',function(){
+    return{
+        restrict:'E',
+        scope:{
+            info:'='
+        },
+        templateUrl:'/Directives/codecademy/scoreboard.html'
+    };
+});
