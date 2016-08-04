@@ -111,4 +111,8 @@ router.get('/BplScores', function(req, res){
    res.render('codecademy/BplScores', {title: 'BPL Full Score Sheet'}); 
 });
 
+router.get('/JLProfiles', function(req, res){
+   res.render('codecademy/JLProfiles', {title:'Justice League Profiles'}); 
+});
+
 module.exports = router;
