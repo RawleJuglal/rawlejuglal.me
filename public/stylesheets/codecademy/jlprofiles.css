@@ -1,0 +1,81 @@
+body{
+    color:white;
+    background-color:red;
+    font-family:"Oxygen"; 
+    font-weight:300; 
+}
+.header .container{
+    background-color:black;
+}
+
+.header img{
+    width:100px;
+}
+
+.media-body h4{
+    margin-top:8px;
+    color:white;
+    text-shadow:2px 2px 2px blue;
+    font-family: 'Condiment', cursive;
+    font-size:2.5em;
+}
+
+.media-body p{
+    margin:1px;
+    padding:1px;
+}
+
+.main .container{
+    background-color:black;
+    
+}
+
+.profile-image img{
+    width:100%;
+}
+
+.profile-image p{
+    margin:3px;
+}
+
+.bio h1, .bio h4{
+    margin:2px 0px;
+    padding:2px 0px;
+}
+
+.bio h1{
+    color:red;
+    text-shadow:1px 1px 2px black;
+}
+
+.bio h4{
+    color:white;
+    text-shadow:1px 1px 2px red;
+}
+
+.bio p{
+    color:white;
+}
+
+.quick-facts{
+    margin-top:10px;
+}
+
+.quick-facts ul li{
+     background: rgba(0,0,0,0.5);
+    border: 1px solid red;
+    color: #fff;
+}
+
+.text-yellow{
+    color:yellow;
+    text-shadow:1px 1px 1px gray;
+}
+
+@media (min-width: 768px) {
+    .profile-image img{
+        margin-top:12px;
+        width:150px;
+        height:150px;
+    }
+}
