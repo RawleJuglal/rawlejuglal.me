@@ -51,14 +51,14 @@
                 <div class='col-xs-12 col-sm-3'>
                   <div class="profile-image">
                     <img class='center-block' ng-src="{{hero.img}}">
-                  <p class="text-center">Artwork by <a href="{{hero.artist_wiki}}">{{hero.img_artist}}</a></p>
+                  <p class="text-center">Artwork by <a ng-bind='hero.img_artist' href="{{hero.artist_wiki}}"></a></p>
                   </div><!--End of left-profile-image-->
                 </div><!--End of col-xs-3-->
                 <div class='col-xs-12 col-sm-6'>
                   <div class="bio">
-                    <h1>{{hero.name}}</h1>
-                    <h4>{{hero.alias}}</h4>
-                    <p>{{hero.description}}</p>
+                    <h1 ng-bind='hero.name'></h1>
+                    <h4 ng-bind='hero.alias'></h4>
+                    <p ng-bind='hero.description'></p>
                   </div><!--End of middle-bio-->
                 </div><!--End of col-xs-6-->
                 <div class='col-xs-12 col-sm-3'>

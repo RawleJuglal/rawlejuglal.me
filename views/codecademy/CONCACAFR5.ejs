@@ -38,11 +38,11 @@
                        <div class='row'>
                            <div class='col-xs-5 col-sm-12'>
                                <p class="no-pad">Round 5</p>
-                               <p class="no-pad">{{match.matchdate | date}}</p>
+                               <p ng-bind='::match.matchdate|date' class="no-pad"></p>
                            </div><!--End of col-xs-6-->
                            <div class='col-xs-7 col-sm-12'>
-                               <p class="no-pad">{{match.stadium}}</p>
-                               <p class="no-pad">{{match.city}}</p>
+                               <p ng-bind='::match.stadium' class="no-pad"></p>
+                               <p ng-bind='::match.city' class="no-pad"></p>
                            </div><!--End of col-xs-6-->
                        </div><!--End of row-->
                    </div><!--End of matchInfo-->
@@ -54,7 +54,7 @@
                            </div><!--End of col-xs-2-->
                            <div class='col-xs-6 col-sm-3'>
                                <img ng-src="{{match.homeFlag_img}}" width="100px" height="60px">
-                               <h4 class="media-heading">{{match.homeTeam}}</h4>
+                               <h4 ng-bind='::match.homeTeam' class="media-heading"></h4>
                            </div><!--End of col-xs-2-->
                            <div class='col-xs-4 col-sm-2 score'>
                               <span>{{match.homeCount}}</span><span>-</span><span>{{match.awayCount}}</span>
@@ -65,7 +65,7 @@
                            </div><!--End of col-xs-2-->
                            <div class='col-xs-6 col-sm-3'>
                                <img ng-src="{{match.awayFlag_img}}" width="100px" height="60px">
-                               <h4 class="media-heading">{{match.awayTeam}}</h4>
+                               <h4 ng-bind='::match.awayTeam' class="media-heading"></h4>
                            </div><!--End of col-xs-2-->
                        </div><!--End of row-->
                    </div><!--End of matchTeams-->

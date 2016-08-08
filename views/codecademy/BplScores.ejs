@@ -43,7 +43,7 @@
                         <div class='container-fluid'>
                             <div class='row'>
                                 <div class='col-xs-12 text-center'>
-                                    <p class='lead'>{{score.period}}</p>
+                                    <p ng-bind='score.period' class='lead'></p>
                                 </div><!--End of col-xs-12-->
                             </div><!--End of row-->
                             <div class='row'>
@@ -57,14 +57,14 @@
                                         <img src='{{score.homeTeam.home_logo}}'/>
                                     </div>
                                     <div class='pull-left'>
-                                        <span>{{score.homeTeam.home_city}}</span>
-                                        <span>{{score.homeTeam.home_mascot}}</span>
+                                        <span ng-bind='::score.homeTeam.home_city'></span>
+                                        <span ng-bind='::score.homeTeam.home_mascot'></span>
                                     </div>
                                 </div>
                                 <div class='col-xs-6'>
                                     <div class='pull-right'>
-                                        <span>{{score.visitorTeam.visitor_city}}</span>
-                                        <span>{{score.visitorTeam.visitor_mascot}}</span>
+                                        <span ng-bind='::score.visitorTeam.visitor_city'></span>
+                                        <span ng-bind='::score.visitorTeam.visitor_mascot'></span>
                                     </div>
                                     <div class='pull-right'>
                                         <img src='{{score.visitorTeam.visitor_logo}}'/>
