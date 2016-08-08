@@ -34,13 +34,13 @@
                   <h4 class="panel-title">
                     <div class="item row">
                       <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">
-                        <p class="source">{{article.headingSource}}</p>
+                        <p ng-bind='::article.headingSource' class="source"></p>
                       </div>
                       <div class="col-xs-4 col-sm-5 col-md-6 col-lg-8">
-                        <p class="title">{{article.title}}</p>
+                        <p ng-bind='::article.title' class="title"></p>
                       </div>
                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2">
-                        <p class="pubdate">{{article.pubdate}}</p>
+                        <p ng-bind='::article.pubdate' class="pubdate"></p>
                       </div>
                     </div>
                   </h4>
@@ -50,8 +50,8 @@
               <div class="panel-body">
                 <div class="description row">
                   <div class="col-xs-12 col-lg-offset-2 col-lg-8">
-                    <h1>{{article.title}}</h1>
-                    <p>{{article.descContent}}</p>
+                    <h1 ng-bind='::article.title'></h1>
+                    <p ng-bind='::article.descContent'></p>
                   </div><!--End of col-xs-12-->
                 </div><!--End of row-->
               </div><!--End of panel-body-->

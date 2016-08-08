@@ -48,11 +48,11 @@
                     <div class="media-body">
                       <div class="mains row" >
                             <div class="item col-md-9">
-                              <h3 class="name">{{appetizer.name}} </h3>
-                              <p class="description">{{appetizer.description}} </p>
+                              <h3 ng-bind='::appetizer.name' class="name"></h3>
+                              <p ng-bind='::appetizer.description' class="description"></p>
                             </div><!--End of item-->
                             <div class="col-md-3">
-                              <p class="price"> {{appetizer.price | currency }}</p>
+                              <p ng-bind='appetizer.price|currency'class="price"></p>
                             </div><!--End of price-->
                       </div><!--End of row-->
                     </div><!--End of media-body-->
@@ -69,11 +69,11 @@
                       <div class="media-body">
                         <div class="mains row" >
                               <div class="item col-md-9">
-                                <h3 class="name">{{main.name}} </h3>
-                                <p class="description">{{main.description}} </p>
+                                <h3 ng-bind='::main.name' class="name"></h3>
+                                <p ng-bind='::main.description' class="description"></p>
                               </div><!--End of item-->
                               <div class="col-md-3">
-                                <p class="price"> {{main.price | currency }}</p>
+                                <p ng-bind='main.price|currency' class="price"></p>
                               </div><!--End of price-->
                         </div><!--End of row-->
                       </div><!--End of media-body-->
@@ -90,10 +90,10 @@
                       <div class="media-body">
                         <div class="mains row" >
                           <div class="item col-md-9">
-                            <h3 class="name">{{extra.name}} </h3>
+                            <h3 ng-bind='::extra.name' class="name"></h3>
                           </div><!--End of item-->
                           <div class="col-md-3">
-                            <p class="price"> {{extra.price | currency }}</p>
+                            <p  ng-bind='extra.price|currency'class="price"></p>
                           </div><!--End of price-->
                         </div><!--End of mains-->
                       </div><!--End of media-body-->
