@@ -1,7 +1,8 @@
-app.controller('newsRoomController', ['$scope', function($scope){
-    $scope.test = 'is working';
+app.controller('newsRoomController', [ function(){
+    var self = this;
+    self.test = 'is working';
     
-    $scope.articles = [
+    self.articles = [
             {
                 date:'November 5, 2014',
                 title:'Move Launches in London'
@@ -15,7 +16,7 @@ app.controller('newsRoomController', ['$scope', function($scope){
                 title:'Improvements to Shutterbugg arrive'
             }]
             
-    $scope.events = [
+    self.events = [
             {
                 date:'November 8-12,2014',
                 title:'Innovation Cloud 2014'

@@ -1,24 +1,25 @@
-app.controller('SuggestionsController',['$scope','$routeParams','suggestions',function($scope, $routeParams, suggestions){
+app.controller('SuggestionsController',['$routeParams','suggestions',function( $routeParams, suggestions){
+    var self = this;
     var swap = 1;
-    $scope.post = suggestions.posts[$routeParams.id];
+    self.post = suggestions.posts[$routeParams.id];
     
-    $scope.addComment = function() {
-         $scope.post.comments.push({
+    self.addComment = function() {
+         self.post.comments.push({
              body:$scope.body,
              upvotes:0
          });
         };
         
-    $scope.upVote=function(index){
+    self.upVote=function(index){
     if(swap)
         {
-            $scope.post.comments[index].upvotes += 1;
+            self.post.comments[index].upvotes += 1;
             $('.thumbsUp .fa').eq(index).css('color','red');
             swap=0;
         }
     else
         {
-            $scope.post.comments[index].upvotes -= 1;
+            self.post.comments[index].upvotes -= 1;
             $('.thumbsUp .fa').eq(index).css('color', 'black');
             swap=1;
         }

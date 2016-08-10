@@ -1,8 +1,12 @@
 //CONTROLLER
-app.controller('favWrestlemaniaController', ['$scope', function($scope) { 
-  $scope.title = 'Find every Wrestlemania you\'re looking for!'; 
-  $scope.promo = 'If you loved it give it a \'+1\', if you\'ve seen better don\'t be afraid to drop a \'-1\'';
-  $scope.products=[ 
+app.controller('favWrestlemaniaController', [ function() { 
+  var self = this;
+  self.plus = 0;
+  self.minus=0;
+  
+  self.title = 'Find every Wrestlemania you\'re looking for!'; 
+  self.promo = 'If you loved it give it a \'+1\', if you\'ve seen better don\'t be afraid to drop a \'-1\'';
+  self.products=[ 
   { 
     name: 'Wrestlemania I', 
     order: 1, 
@@ -283,11 +287,40 @@ app.controller('favWrestlemaniaController', ['$scope', function($scope) {
     dislikes:0
   },
 ]
-  $scope.plusOne=function(index) { 
-    $scope.products[index].likes += 1; 
+  self.plusOne=function(index) { 
+    if(self.plus === 0)
+      {
+        if(self.minus === 0)
+          {
+            self.products[index].likes += 1; 
+            self.plus = 1;
+          }
+        else
+          {
+            self.products[index].dislikes-=1;
+            self.products[index].likes += 1;
+            self.plus = 1;
+            self.minus =0;
+          }
+      }
   };
-  $scope.minusOne=function(index) { 
-    $scope.products[index].dislikes += 1; 
+  
+  self.minusOne=function(index) { 
+    if(self.minus === 0)
+      {
+        if(self.plus === 0)
+          {
+            self.products[index].dislikes+=1;
+            self.minus = 1;
+          }
+        else
+          {
+            self.products[index].likes-=1;
+            self.products[index].dislikes+=1;
+            self.minus = 1;
+            self.plus = 0;
+          }
+      }
   };
 }]);
 

@@ -1,7 +1,8 @@
-app.controller('redeyePhotographyController', ['$scope', function($scope){
-    $scope.test = 'is working';
+app.controller('redeyePhotographyController', [ function(){
+    var self = this;
+    self.test = 'is working';
     
-    $scope.photos = [
+    self.photos = [
         {
                 img:'https://s3.amazonaws.com/codecademy-content/projects/red-eye-photography/p1.jpg',
             },

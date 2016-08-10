@@ -32,25 +32,25 @@
       </div><!--End of container-->
     </div><!--End of header-->
 
-    <div class="main" ng-controller="LuchaController">
+    <div class="main" ng-controller="LuchaController as main">
       <div class="container">
         <div class="content">
           <div class="row">
             <div class="col-sm-4 col-md-3" class="series_img">
-                <img ng-src="{{program.series_img}}"/>
+                <img ng-src="{{main.program.series_img}}"/>
             </div><!--End of col-md-3-->
             <div class="col-sm-8 col-md-6">
-              <h1 ng-bind='::program.series' class="series"></h1>
-              <h2 ng-bind='::program.episode' class="episode"></h2>
-              <p ng-bind='::program.description' class="description"></p>
+              <h1 ng-bind='::main.program.series' class="series"></h1>
+              <h2 ng-bind='::main.program.episode' class="episode"></h2>
+              <p ng-bind='::main.program.description' class="description"></p>
             </div><!--End of col-md-6-->
             <div class="col-sm-12 col-md-3">
               <ul class="list-group">
-                <li class="list-group-item"><span>Date:</span> {{program.datetime | date }} </li>
-                <li class="list-group-item"><span>On air:</span> {{program.datetime | date:'EEEE'}} </li>
-                <li class="list-group-item"><span>Time:</span> {{program.datetime | date:'h:mm a'}} </li>
-                <li class="list-group-item"><span>Season:</span>{{program.season}}  </li>
-                <li class="list-group-item"><span>Genre:</span>{{program.genre}}  </li>
+                <li class="list-group-item"><span>Date:</span> {{main.program.datetime | date }} </li>
+                <li class="list-group-item"><span>On air:</span> {{main.program.datetime | date:'EEEE'}} </li>
+                <li class="list-group-item"><span>Time:</span> {{main.program.datetime | date:'h:mm a'}} </li>
+                <li class="list-group-item"><span>Season:</span>{{main.program.season}}  </li>
+                <li class="list-group-item"><span>Genre:</span>{{main.program.genre}}  </li>
               </ul>
             </div><!--End of col-md-3-->
           </div><!--End of row-->

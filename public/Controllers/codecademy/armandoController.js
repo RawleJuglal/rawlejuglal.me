@@ -1,7 +1,8 @@
-app.controller('armandoController', ['$scope', function($scope){
-    $scope.test = 'is working';
+app.controller('armandoController', [function(){
+    var self = this;
+    self.test = 'is working';
     
-    $scope.photos = [
+    self.photos = [
         {
                 img:'https://s3.amazonaws.com/codecademy-content/projects/armando-perez/p1.jpg',
             },

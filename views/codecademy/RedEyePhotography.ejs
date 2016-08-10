@@ -62,10 +62,10 @@
       </div><!-- /.container-fluid -->
     </nav>
     
-    <div class='feature' ng-controller='redeyePhotographyController'>
+    <div class='feature' ng-controller='redeyePhotographyController as main'>
         <div class='container-fluid'>
             <div class='row'>
-                <div class='col-xs-12 col-sm-4' ng-repeat='photo in photos'>
+                <div class='col-xs-12 col-sm-4' ng-repeat='photo in main.photos'>
                    <redeye-Photography listing='photo'></redeye-Photography> 
                 </div><!--End of col-xs-12-->
             </div><!--End of row-->

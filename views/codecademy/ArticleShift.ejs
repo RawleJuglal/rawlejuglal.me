@@ -27,10 +27,10 @@
   </head>
   <body ng-app='codecademy'>
       <div class='container'>
-        <div class="panel-group panel-articleShift" id="accordion" role="tablist" aria-multiselectable="true" ng-controller="ashiftController">
-          <div class="panel panel-default panel-ashift" ng-repeat="article in articles">
+        <div class="panel-group panel-articleShift" id="accordion" role="tablist" aria-multiselectable="true" ng-controller="ashiftController as main">
+          <div class="panel panel-default panel-ashift" ng-repeat="article in main.articles">
               <a  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="{{article.headingHREF}}" aria-expanded="false" aria-controls="{{article.headingControls}}">
-                <div class="panel-heading" role="tab" id="{{article.headingID}}" ng-click='updateClass(article.headingID)'>
+                <div class="panel-heading" role="tab" id="{{article.headingID}}" ng-click='main.updateClass(article.headingID)'>
                   <h4 class="panel-title">
                     <div class="item row">
                       <div class="col-xs-5 col-sm-4 col-md-3 col-lg-2">

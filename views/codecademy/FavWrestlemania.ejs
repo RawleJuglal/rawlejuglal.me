@@ -33,21 +33,20 @@
           </div><!--End of container-fluid-->
         </div><!--End of header-->
     
-        <div class="main" ng-controller="favWrestlemaniaController">
+        <div class="main" ng-controller="favWrestlemaniaController as main">
           <div class="container">
-    
-            <h1 ng-bind='::title'></h1>
-            <h2 ng-bind='::promo' class='text-center'></h2>
+            <h1 ng-bind='::main.title'></h1>
+            <h2 ng-bind='::main.promo' class='text-center'></h2>
             <div class='row'>
-               <div ng-repeat="product in products" class=" col-xs-12 col-md-6"> 
+               <div ng-repeat="product in main.products" class=" col-xs-12 col-md-6"> 
                   <div class="thumbnail"> 
                     <a href='{{product.link}}'><img ng-src="{{ product.cover }}"></a>
                     <a href='{{product.link}}'><p ng-bind='::product.name' class="title text-center"></p></a>
                     <p ng-bind='::product.order' class="order"></p> 
                     <p ng-bind='product.pubdate|date' class="date text-center"></p>
                     <div class="rating"> 
-                      <p ng-bind="'+'+ product.likes" class="likes" ng-click="plusOne($index)"></p>
-                      <p ng-bind="'-'+product.dislikes" class="likes" ng-click="minusOne($index)"></p>
+                      <p ng-bind="'+'+ product.likes" class="likes" ng-click="main.plusOne($index)"></p>
+                      <p ng-bind="'-'+product.dislikes" class="likes" ng-click="main.minusOne($index)"></p>
                     </div><!--End of ratings-->
                   </div> <!--End of thumbnail-->
                 </div><!--End of col-md-6--> 
