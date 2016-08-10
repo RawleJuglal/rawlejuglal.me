@@ -35,10 +35,10 @@
             </div><!--End of row-->
         </div><!--End of container-fluid-->
     </div><!--End of header-->
-    <div class='main' ng-controller='bplScoreController'>
+    <div class='main' ng-controller='bplScoreController as main'>
         <div class='container-fluid'>
             <div class='row'>
-                <div class='col-xs-12 col-sm-6' ng-repeat='score in scores'>
+                <div class='col-xs-12 col-sm-6' ng-repeat='score in main.scores'>
                     <div class='scoreDiv'>
                         <div class='container-fluid'>
                             <div class='row'>

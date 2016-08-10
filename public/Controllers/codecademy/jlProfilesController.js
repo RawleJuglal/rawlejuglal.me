@@ -1,7 +1,8 @@
-app.controller('jlProfilesController', ['$scope', function($scope){
-    $scope.test = 'is working';
+app.controller('jlProfilesController', [ function(){
+    var self = this;
+    self.test = 'is working';
     
-    $scope.heros = [
+    self.heros = [
         {
                 name:'Superman',
                 description:'Superman is a fictional superhero appearing in American comic books published by DC Comics. He was created by writer Jerry Siegel and artist Joe Shuster in 1933; later, in 1938, the character was sold to Detective Comics, Inc. (later DC Comics). Superman first appeared in Action Comics #1 (June 1938) and subsequently appeared in various radio serials, newspaper strips, television programs, films, and video games. With this success, Superman helped to create the superhero genre and establish its primacy within the American comic book.',

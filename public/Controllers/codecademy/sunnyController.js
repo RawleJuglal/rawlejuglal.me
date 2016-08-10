@@ -1,6 +1,7 @@
-app.controller('sunnyController', ['$scope', function($scope){
-    $scope.today = new Date();
-        $scope.appetizers = [
+app.controller('sunnyController', [ function(){
+  var self = this;
+    self.today = new Date();
+        self.appetizers = [
                 {
                   name: 'Sausage, egg & cheese casserole muffins',
                   img:'https://s-media-cache-ak0.pinimg.com/564x/84/a2/a3/84a2a388a7b826772af3f8cdb19378af.jpg',
@@ -21,7 +22,7 @@ app.controller('sunnyController', ['$scope', function($scope){
                 }
         ];
   
-        $scope.mains=[
+        self.mains=[
               {
               	name: 'Big Steak Omelette',
                 img:'https://s-media-cache-ak0.pinimg.com/564x/c5/80/cd/c580cd83a1ff5f740b08bed9738f6d87.jpg',
@@ -42,7 +43,7 @@ app.controller('sunnyController', ['$scope', function($scope){
               }
         ];
         
-        $scope.extras=[
+        self.extras=[
               {
               	name:'Hashbrowns',
                 img:'http://cf.lifeloveandsugar.com/wp-content/uploads/2012/08/cheesy_hashbrown_casserole2.jpg',

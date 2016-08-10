@@ -1,6 +1,7 @@
 //CONTROLLER
-app.controller('concacafController',['$scope', function($scope){
-  $scope.matches=[
+app.controller('concacafController',[function(){
+  var self = this;
+  self.matches=[
     {
       matchdate:new Date(2016,00,31,20,00,00),
       stadium:"St. Louis Soccer Park",
@@ -112,22 +113,22 @@ app.controller('concacafController',['$scope', function($scope){
       awayCount:0
     }
   ]
-  $scope.addHome = function(index){
-    $scope.matches[index].homeCount+=1;
+  self.addHome = function(index){
+    self.matches[index].homeCount+=1;
   }
-  $scope.minusHome = function(index){
-    if($scope.matches[index].homeCount>0)
+  self.minusHome = function(index){
+    if(self.matches[index].homeCount>0)
        {
-         $scope.matches[index].homeCount-=1;
+         self.matches[index].homeCount-=1;
        }   
   }
-  $scope.addAway=function(index){
-    $scope.matches[index].awayCount+=1;
+  self.addAway=function(index){
+    self.matches[index].awayCount+=1;
   }
-$scope.minusAway=function(index){
-  if($scope.matches[index].awayCount>0)
+self.minusAway=function(index){
+  if(self.matches[index].awayCount>0)
        {
-         $scope.matches[index].awayCount-=1;
+         self.matches[index].awayCount-=1;
        }
 }
 }]);

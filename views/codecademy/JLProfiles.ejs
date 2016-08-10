@@ -44,9 +44,9 @@
             </div><!--End of row-->
         </div><!--End of container-->
     </div><!--End of header-->
-    <div class='main' ng-controller='jlProfilesController'>
+    <div class='main' ng-controller='jlProfilesController as main'>
       <div class='container'>
-          <div ng-repeat='hero in heros'>
+          <div ng-repeat='hero in main.heros'>
               <div class='row'>
                 <div class='col-xs-12 col-sm-3'>
                   <div class="profile-image">

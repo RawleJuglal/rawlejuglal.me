@@ -86,7 +86,7 @@
         </div><!--End of row-->
       </div><!--End of container-->
     </div><!--End of jumbotron-->
-    <div class='feature' ng-controller='newsRoomController'>
+    <div class='feature' ng-controller='newsRoomController as main'>
         <div class='container-fluid'>
             <div class='row'>
                 <div class='col-xs-12 col-sm-7 no-right'>
@@ -97,7 +97,7 @@
                             </div><!--End of col-xs-12-->
                         </div><!--End of row-->
                         <div class='row'>
-                            <div class='col-xs-12' ng-repeat='article in articles'>
+                            <div class='col-xs-12' ng-repeat='article in main.articles'>
                                 <news-Room listing='article'></news-Room>
                             </div><!--End of col-xs-12-->
                         </div><!--End of row-->
@@ -111,7 +111,7 @@
                             </div><!--End of col-xs-12-->
                         </div><!--End of row-->
                         <div class='row'>
-                            <div class='col-xs-12' ng-repeat='event in events'>
+                            <div class='col-xs-12' ng-repeat='event in main.events'>
                                 <news-Room listing='event'></news-Room>
                             </div><!--End of col-xs-12-->
                         </div><!--End of row-->

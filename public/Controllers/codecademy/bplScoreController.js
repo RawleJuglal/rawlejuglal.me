@@ -1,6 +1,7 @@
-app.controller('bplScoreController',['$scope',function($scope){
-    $scope.test = 'is working';
-    $scope.scores = [
+app.controller('bplScoreController',[function(){
+    var self = this;
+    self.test = 'is working';
+    self.scores = [
     {
         period:'Final',
         homeTeam:{
