@@ -2,6 +2,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     $scope.test = 'is working';
     
     $scope.notes = [
+        {
+                url:'codecademy/suggestionBox',
+                title:'Political Suggestion Box',
+                faImg:' fa-flag',
+                faSize:' fa-3x',
+                desc:'Have an idea the people should vote on'
+            },
             {
                 url:'codecademy/jlProfiles',
                 title:'Justice League Profiles',

@@ -44,7 +44,7 @@ suggestionApp.controller('suggestionController',['suggestions', function(suggest
         var self = this;
         var swap = 1;
         self.post = suggestions.posts[$routeParams.id];
-        console.log(self.post)
+
         self.addComment = function() {
              self.post.comments.push({
                  body:self.body,
