@@ -40,70 +40,75 @@
     </div><!--End of main-->
     
     <script type='text/ng-template' id='/home.html'>
-      <form id='idea' ng-submit="addSuggestion()" style="margin-top: 50px">
-        <h3> Submit Your Suggestion </h3>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Great ideas here" ng-model="title"></input>
-        </div>
-        <button type="submit" class="btn btn-danger">Suggest</button>
-      </form>
-      <div class='row' ng-controller='suggestionController as sug'>
-          <div class='col-xs-12 col-sm-6 col-md-4'  ng-repeat="post in sug.posts | orderBy:'-upvotes'">
-              <div class='ideaBox'>
-                  <div class='avatar'>
-                      <img  class='img-responsive center-block' src="{{post.avatar}}"></img>
-                  </div><!-- End of avatar -->
-                  <div class='ideaTitle'>
-                      <h3 class='no-pad text-center'>{{post.title}}</h3>
-                  </div><!--End of ideaTitle-->
-                  <div class='interfaceBox'>
-                      <i class="fa fa-2x fa-heart-o" ng-click="sug.upVote($index)"></i>
-                      <span class='upvotesCircle'>{{post.upvotes}}</span>
-                      <a class='btn btn-primary btn-xs pull-right' href="#/suggestion/{{$index}}">Comments</a>
-                  </div><!-- End of interfaceBox -->
-              </div><!-- End of ideaBox -->
-          </div><!-- End of col -->
-      </div><!--End of row -->
+      <div class='homeTemplate' ng-controller='suggestionController as sug'>
+        <form id='idea' ng-submit="sug.addSuggestion()" style="margin-top: 50px">
+          <h3> Submit Your Suggestion </h3>
+          <div class="form-group">
+              <input type="text" class="form-control" placeholder="Great ideas here" ng-model="sug.title"></input>
+          </div>
+          <button type="submit" class="btn btn-danger">Suggest</button>
+        </form>
+        <div class='row'>
+            <div class='col-xs-12 col-sm-6 col-md-4'  ng-repeat="post in sug.posts | orderBy:'-upvotes'">
+                <div class='ideaBox'>
+                    <div class='avatar'>
+                        <img  class='img-responsive center-block' src="{{post.avatar}}"></img>
+                    </div><!-- End of avatar -->
+                    <div class='ideaTitle'>
+                        <h3 class='no-pad text-center'>{{post.title}}</h3>
+                    </div><!--End of ideaTitle-->
+                    <div class='interfaceBox'>
+                        <i class="fa fa-2x fa-heart-o" ng-click="sug.upVote($index)"></i>
+                        <span class='upvotesCircle'>{{post.upvotes}}</span>
+                        <a class='btn btn-primary btn-xs pull-right' href="#/suggestion/{{$index}}">Comments</a>
+                    </div><!-- End of interfaceBox -->
+                </div><!-- End of ideaBox -->
+            </div><!-- End of col -->
+        </div><!--End of row -->
+      </div><!--End of homeTemplate-->
     </script>
     
     <script type='text/ng-template' id='/suggestions.html'>
-      <div class='row' ng-controller='commentsController as comCtrl'>
-        <div class='col-xs-12'>
-            <div class='commentTitle'>
-                <h3 class='text-center'>{{comCtrl.post.title}}</h3>
-            </div><!--End of commentTitle-->
-        </div><!--End of col-->
-      </div><!--End of row-->
-      <div class='row' ng-repeat='comment in comCtrl.post.comments'>
-          <div class='col-xs-12 col-sm-10 col-sm-offset-1'>
-              <div class='commentContainer'>
-                  <div class='row'>
-                      <div class='col-xs-3 col-sm-2 col-md-1'>
-                          <div class='thumbsUp'>
-                              <i class="fa fa-thumbs-up" ng-click='comCtrl.upVote($index)'></i>
-                          <span>{{comment.upvotes}}</span>
-                          </div><!--End of thumbsUp-->
-                      </div><!--End of col-->
-                      <div class='col-xs-9 col-sm-10 col-md-11'>
-                          <div class='commentBody'>
-                              <span>{{comment.body}}</span>
-                          </div><!--End of commentBody-->
-                      </div><!--End of col-->
-                  </div><!--End of row-->
-              </div><!--End of commentContainer-->
+      <div class='suggestionsTemplate' ng-controller='commentsController as comCtrl'>
+        <div class='row'>
+          <div class='col-xs-12'>
+              <div class='commentTitle'>
+                  <h3 class='text-center'>{{comCtrl.post.title}}</h3>
+              </div><!--End of commentTitle-->
           </div><!--End of col-->
-      </div><!--End of row-->
-      <div class='row'>
-        <div class='col-xs-12'>
-          <form id='comment' ng-submit="addComment()" style="margin-top: 50px">
-            <h3> Submit Your Comment </h3>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Place comment here" ng-model="body"></input>
-            </div><!--End of form-group-->
-            <button type="submit" class="btn btn-danger">Suggest</button>
-          </form>
-        </div><!--End of col-->
-      </div><!--End of row-->
+        </div><!--End of row-->
+        <div class='row' ng-repeat='comment in comCtrl.post.comments'>
+            <div class='col-xs-12 col-sm-10 col-sm-offset-1'>
+                <div class='commentContainer'>
+                    <div class='row'>
+                        <div class='col-xs-3 col-sm-2 col-md-1'>
+                            <div class='thumbsUp'>
+                                <i class="fa fa-thumbs-up" ng-click='comCtrl.upVote($index)'></i>
+                            <span>{{comment.upvotes}}</span>
+                            </div><!--End of thumbsUp-->
+                        </div><!--End of col-->
+                        <div class='col-xs-9 col-sm-10 col-md-11'>
+                            <div class='commentBody'>
+                                <span>{{comment.body}}</span>
+                            </div><!--End of commentBody-->
+                        </div><!--End of col-->
+                    </div><!--End of row-->
+                </div><!--End of commentContainer-->
+            </div><!--End of col-->
+        </div><!--End of row-->
+        <div class='row'>
+          <div class='col-xs-12'>
+            <form id='comment' ng-submit="comCtrl.addComment()" style="margin-top: 50px">
+              <h3> Submit Your Comment </h3>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Place comment here" ng-model="comCtrl.body"></input>
+              </div><!--End of form-group-->
+              <button type="submit" class="btn btn-danger">Suggest</button>
+            </form>
+          </div><!--End of col-->
+        </div><!--End of row-->
+      </div>
+      
     </script>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

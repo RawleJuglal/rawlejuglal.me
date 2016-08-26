@@ -11,6 +11,7 @@ header{
 }
 
 .main .container-fluid{
+    min-height:100vh;
     background-color:#00012E;
     padding-bottom:24px;
 }
