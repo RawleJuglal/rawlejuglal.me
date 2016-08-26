@@ -1,26 +1,16 @@
-.no-pad{
-    margin:0;
-    padding:0;
-}
-
-.img-responsive{
-    margin:0 auto;    
-}
-
-.headerBox{
+header{
     background-image:url('https://farm4.staticflickr.com/3754/8880731807_6d44687445_o_d.jpg');
     background-size:cover;
     height:84px;
 }
 
-.headerBox h1{
+.headerDiv h1{
     font-family: 'Niconne', cursive;
     color:white;
     text-shadow:2px 2px black;
-    line-height:84px;
 }
 
-.container{
+.main .container-fluid{
     background-color:#00012E;
     padding-bottom:24px;
 }
