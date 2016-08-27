@@ -2,7 +2,14 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     $scope.test = 'is working';
     
     $scope.notes = [
-        {
+            {
+                url:'freecodecamp/headerParser',
+                title:'Request dot headers',
+                faImg:' fa-server',
+                faSize:' fa-3x',
+                desc:'A few of your headers'
+            },
+            {
                 url:'codecademy/suggestionBox',
                 title:'Political Suggestion Box',
                 faImg:' fa-flag',
