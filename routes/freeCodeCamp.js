@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+var HeadParser = require(process.cwd()+'/public/javascripts/freecodecamp/headParser.js');
+
+var headParser = new HeadParser();
 
 router.get('/', function(req, res) {
   res.render('index', { title: 'FreeCodeCamp Projects' });
@@ -35,6 +38,11 @@ router.get('/TicTacToe', function( req, res){
 
 router.get('/WikiViewer', function( req, res){
   res.render('freecodecamp/WikiViewer', { title: 'Wiki Viewer Site'});
+});
+
+router.get('/headerParser', function(req, res){
+  var headerObject = headParser.headObj(req.headers);
+  res.send(headerObject);
 });
 
 module.exports = router;
