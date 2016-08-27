@@ -45,4 +45,8 @@ router.get('/headerParser', function(req, res){
   res.send(headerObject);
 });
 
+router.get('/urlShortener', function(req, res){
+  res.render('freecodecamp/urlShortener', { title: 'Url Shortener Microservice'});
+});
+
 module.exports = router;

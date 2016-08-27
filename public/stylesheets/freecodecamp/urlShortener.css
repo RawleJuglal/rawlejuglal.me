@@ -1,0 +1,21 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.userStories ul{
+  margin:0 0 0 8px;
+	border-left:3px solid silver;
+}
+
+.exampleUsage ul li{
+  list-style:none;
+}
+
+.exampleOutput span{
+  margin:0 0 0 40px;
+}
