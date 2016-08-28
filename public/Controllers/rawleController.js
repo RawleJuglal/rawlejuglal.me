@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/urlShortener',
+                title:'Url Shortener',
+                faImg:' fa-compress',
+                faSize:' fa-3x',
+                desc:'Less can be more'
+            },
+            {
                 url:'freecodecamp/headerParser',
                 title:'Request dot headers',
                 faImg:' fa-server',
