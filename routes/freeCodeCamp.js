@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 var HeadParser = require(process.cwd()+'/public/javascripts/freecodecamp/headParser.js');
+var URLShortener = require(process.cwd()+'/public/Modules/urlShortener.module.js');
+var ShortURL = require('../models/shortUrl.js');
 
 var headParser = new HeadParser();
 
@@ -46,7 +50,34 @@ router.get('/headerParser', function(req, res){
 });
 
 router.get('/urlShortener', function(req, res){
-  res.render('freecodecamp/urlShortener', { title: 'Url Shortener Microservice'});
+  res.render('freecodecamp/urlShortener', { title: 'Url Shortener Site'});
+});
+
+router.get('/urlShortener/:userUrl', function(req, res){
+  if(URLShortener.checkValidUrl(req.params.userUrl))
+    {
+      var UserUrl = req.params.userUrl;
+      var randNbr = URLShortener.assignRanNbr();
+      ShortURL.create(URLShortener.createUrlObj(UserUrl, randNbr), function (err, smallUrl) {
+        if (err) return console.log(err);
+        else res.json(smallUrl);
+      });
+    }
+  else
+    {
+      res.send('Invalid url');
+    }
+});
+
+router.get('/:short', function(req, res){
+  if(randNbr == req.params.short)
+    {
+      res.redirect(userUrl);
+    }
+  else
+    {
+      res.send('Not the correct shortcut');
+    }
 });
 
 module.exports = router;
