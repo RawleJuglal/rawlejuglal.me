@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
 var shortUrlSchema = new Schema({
-  long_id:String,
+  long_url:String,
   short_id:Number
 }, {collection: 'shortUrl'});
 

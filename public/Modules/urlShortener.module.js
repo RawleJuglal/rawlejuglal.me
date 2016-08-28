@@ -12,7 +12,7 @@ module.exports.assignRanNbr = function(){
 
 module.exports.createUrlObj = function(url, num){
     var urlObj = {};
-    urlObj.original_url = url;
-    urlObj.short_url = 'https://rawlejuglal-me-rawlejuglal-1.c9users.io/freecodecamp/'+num;
+    urlObj.long_url = url;
+    urlObj.short_id = num;
     return urlObj;
 }

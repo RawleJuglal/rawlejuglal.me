@@ -70,14 +70,10 @@ router.get('/urlShortener/:userUrl', function(req, res){
 });
 
 router.get('/:short', function(req, res){
-  if(randNbr == req.params.short)
-    {
-      res.redirect(userUrl);
-    }
-  else
-    {
-      res.send('Not the correct shortcut');
-    }
+  ShortURL.findOne({short_id:req.params.short}, function(err, shortUrl){
+    if(err) res.send('Invalid url');
+    else res.redirect('http://'+shortUrl.long_url);
+  });
 });
 
 module.exports = router;
