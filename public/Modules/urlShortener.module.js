@@ -14,5 +14,6 @@ module.exports.createUrlObj = function(url, num){
     var urlObj = {};
     urlObj.long_url = url;
     urlObj.short_id = num;
+    urlObj.short_path = 's/'+num;
     return urlObj;
 }

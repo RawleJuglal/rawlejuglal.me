@@ -52,14 +52,6 @@ router.get('/headerParser', function(req, res){
   res.send(headerObject);
 });
 
-router.get('/fileMetaData', function(req, res){
-  res.render('freecodecamp/fileMetaData', { title: 'File MetaData Microservice'});
-});
-
-router.post('/readfile', upload.single('file'), function(req,res){
-		res.json({"size":req.file.size + "bytes"});
-	});
-
 router.get('/urlShortener', function(req, res){
   res.render('freecodecamp/urlShortener', { title: 'Url Shortener Site'});
 });
@@ -80,13 +72,19 @@ router.get('/urlShortener/:userUrl', function(req, res){
     }
 });
 
-router.get('/:short', function(req, res){
+router.get('/s/:short', function(req, res){
   ShortURL.findOne({short_id:req.params.short}, function(err, shortUrl){
     if(err) res.send('Invalid url');
     else res.redirect('http://'+shortUrl.long_url);
   });
 });
 
+router.get('/fileMetaData', function(req, res){
+  res.render('freecodecamp/fileMetaData', { title: 'File MetaData Microservice'});
+});
 
+router.post('/readfile', upload.single('file'), function(req,res){
+		res.json({"size":req.file.size + "bytes"});
+	});
 
 module.exports = router;
