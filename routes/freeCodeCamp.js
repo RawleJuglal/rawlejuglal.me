@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var multer = require('multer');
+var storage = multer.memoryStorage();
+var upload = multer({ storage: storage });
 var HeadParser = require(process.cwd()+'/public/javascripts/freecodecamp/headParser.js');
 var URLShortener = require(process.cwd()+'/public/Modules/urlShortener.module.js');
 var ShortURL = require('../models/shortUrl.js');
@@ -49,6 +52,10 @@ router.get('/headerParser', function(req, res){
   res.send(headerObject);
 });
 
+router.get('/fileMetaData', function(req, res){
+  res.render('freecodecamp/fileMetaData', { title: 'File MetaData Microservice'});
+});
+
 router.get('/urlShortener', function(req, res){
   res.render('freecodecamp/urlShortener', { title: 'Url Shortener Site'});
 });
@@ -75,5 +82,7 @@ router.get('/:short', function(req, res){
     else res.redirect('http://'+shortUrl.long_url);
   });
 });
+
+
 
 module.exports = router;
