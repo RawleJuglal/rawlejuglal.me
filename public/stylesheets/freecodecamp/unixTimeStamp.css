@@ -1,0 +1,14 @@
+/*Rawle CSS Styling Sheet*/
+
+.DOMtoc{
+	display: none;
+}
+
+.userStoriesContainer{
+    border-left:6px solid silver;
+    padding:10px 0px;
+}
+
+dt{
+    margin-left:15px;
+}

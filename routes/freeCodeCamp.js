@@ -7,6 +7,7 @@ var storage = multer.memoryStorage();
 var upload = multer({ storage: storage });
 var HeadParser = require(process.cwd()+'/public/javascripts/freecodecamp/headParser.js');
 var URLShortener = require(process.cwd()+'/public/Modules/urlShortener.module.js');
+var UnixConverter = require(process.cwd()+'/public/Modules/unixConverter.module.js');
 var ShortURL = require('../models/shortUrl.js');
 
 var headParser = new HeadParser();
@@ -85,6 +86,15 @@ router.get('/fileMetaData', function(req, res){
 
 router.post('/readfile', upload.single('file'), function(req,res){
 		res.json({"size":req.file.size + "bytes"});
-	});
+});
+
+router.get('/unixTimeStamp', function(req, res){
+  res.render('freecodecamp/unixTimeStamp', { title: 'Unix TimeStamp Converter'});
+});
+
+router.get('/convert/:userInput', function(req, res){
+  var resObj = UnixConverter.unixHandler(req.params.userInput);
+  res.json(resObj);
+});
 
 module.exports = router;
