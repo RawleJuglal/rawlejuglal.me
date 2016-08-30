@@ -56,6 +56,10 @@ router.get('/fileMetaData', function(req, res){
   res.render('freecodecamp/fileMetaData', { title: 'File MetaData Microservice'});
 });
 
+router.post('/readfile', upload.single('file'), function(req,res){
+		res.json({"size":req.file.size + "bytes"});
+	});
+
 router.get('/urlShortener', function(req, res){
   res.render('freecodecamp/urlShortener', { title: 'Url Shortener Site'});
 });

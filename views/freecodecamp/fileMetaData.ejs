@@ -3,16 +3,18 @@
 <html>
 
 	<head>
-		<title><%= title %></title>
+		<title>Rawle's File Metadata Microservice</title>
 		<!--Bootstrap-->
 		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
 		<!--Custom-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="/stylesheets/freecodecamp/fileMetaData.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
-	    <div class="container">
+		<div class="container">
 			<h1>FreeCodeCamp API Basejump: File Metadata Microservice</h1>
 			<div class="userStories">
 				<h2>User stories:</h2>
@@ -27,21 +29,23 @@
 "size": "98200bytes"
 }</pre></span>
 	 		</div><!--End of exampleOutput-->
-			<form class='form-inline' enctype="multipart/form-data" action="/readFile" method="post">
+			<form class='form-inline' enctype="multipart/form-data" action="/freecodecamp/readFile" method="post">
 				<div class="form-group">
-					<input  class='btn btn-default' type="submit" value="Upload">' type="file" name="file" />
+					<input  class='btn btn-default' type="file" name="file">
 				</div><!--End of form-group-->
 				<div class="form-group">
 					<input  class='btn btn-default' type="submit" value="Upload">
 				</div><!--End of form-group-->
 		    </form>
-		</div><!--End of container-->	
+		</div><!--End of container-->
+		
 		
 		
 		
 		<!--JQuery-->
-		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 		<!--Bootstrap-->
 		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
+
 </html>
