@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/fileMetaData',
+                title:'File Meta Data Microservice',
+                faImg:' fa-upload',
+                faSize:' fa-3x',
+                desc:'How many bytes in your file'
+            },
+            {
                 url:'freecodecamp/urlShortener',
                 title:'Url Shortener',
                 faImg:' fa-compress',
