@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title><%= title %></title>
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+		integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!--Custom-->
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>FreeCodeCamp API Basejump: Image Search Abstraction Layer</h1>
+			<div class="userStories">
+				<h2>User stories:</h2>
+					<ul>
+						<li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+						<li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+						<li>I can get a list of the most recently submitted search strings.</li>
+					</ul>
+			</div><!--End of userStories-->
+	    	<div class="exampleUsage">
+	    		<h2>Example of image search:</h2>
+					<ul>
+						<li><span class='bg-danger'>https://image-search-abstraction-layer-rawlejuglal.c9users.io/api/imagesearch/lol%20cats?offset=2</span></li>
+					</ul>
+	    	</div>
+			
+	 		<div class="exampleOutput">
+	 			<h2>Example of image search output</h2>
+		 		<span class='bg-danger'><pre>{
+"url": "http://4.bp.blogspot.com/-ZoM-EyBkMio/UZnYy348LoI/AAAAAAAAIRU/1nPJGpfX36I/s1600/LOLCats-lol-cats-65.jpg",
+"snippet": "LOLCats - lol-cats",
+"thumbnail": "http://ts3.mm.bing.net/th?id=OIP.M78013c78f09ebf50f8d0f5cefa1c9b30o0&pid=15.1",
+"context": "http://photography-galleries.blogspot.com/2013/05/lolcats-we-wants-it-we-needs-it.html"
+}</pre></span>
+	 		</div><!--End of exampleOutput-->
+	 		<div class="exampleUsage">
+	 			<h2>Example of recently submitted searches</h2>
+	 				<ul>
+	 					<li><span class='bg-danger'>https://image-search-abstraction-layer-rawlejuglal.c9users.io/api/latest/imagesearch</span></li>	
+	 				</ul>
+	 		</div><!--End of exampleUsage-->
+	 		<div class="exampleOutput">
+	 			<h2>Example of recently submitted searches</h2>
+	 			<span class='bg-danger'><pre>[
+{
+"term": "truffles",
+"when": "2016-04-27T04:21:36.673Z"
+},
+{
+"term": "boar",
+"when": "2016-04-27T04:21:50.540Z"
+}
+]</pre></span>
+	 		</div><!--End of exampleOutput-->
+		</div><!--End of container-->
+		
+		
+		
+		
+		<!--JQuery-->
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!--Bootstrap-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!--AJAX (already provided through clementinejs)-->
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
+	</body>
+
+</html>

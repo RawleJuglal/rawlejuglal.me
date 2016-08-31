@@ -97,4 +97,8 @@ router.get('/convert/:userInput', function(req, res){
   res.json(resObj);
 });
 
+router.get('/isal', function(req, res){
+  res.render('freecodecamp/isal', { title: 'Image Search Abstraction Layer'});
+});
+
 module.exports = router;
