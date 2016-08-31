@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'freecodecamp/isal',
+                title:'Image Search Abstraction Layer',
+                faImg:' fa-search',
+                faSize:' fa-3x',
+                desc:'Using Bing to find images'
+            },
+            {
                 url:'freecodecamp/unixTimeStamp',
                 title:'Unix Time Stamp Converter',
                 faImg:' fa-clock-o',
