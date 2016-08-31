@@ -9,8 +9,12 @@ var HeadParser = require(process.cwd()+'/public/javascripts/freecodecamp/headPar
 var URLShortener = require(process.cwd()+'/public/Modules/urlShortener.module.js');
 var UnixConverter = require(process.cwd()+'/public/Modules/unixConverter.module.js');
 var ShortURL = require('../models/shortUrl.js');
+var BingSearch = require(process.cwd() + '/public/Modules/bingSearch.module.js');
+var LatestSearch = require(process.cwd() + '/public/Modules/latestSearch.module.js');
 
 var headParser = new HeadParser();
+var bingSearchHandler = new BingSearch();
+var latestSearchHandler = new LatestSearch();
 
 router.get('/', function(req, res) {
   res.render('index', { title: 'FreeCodeCamp Projects' });
@@ -99,6 +103,22 @@ router.get('/convert/:userInput', function(req, res){
 
 router.get('/isal', function(req, res){
   res.render('freecodecamp/isal', { title: 'Image Search Abstraction Layer'});
+});
+
+router.get('/api/imagesearch/:keyword', function( req, res){
+  latestSearchHandler.addSearchTerm(req.params.keyword, function(err, response){
+    if(err) res.status(400)
+    else console.log('Search term added successfully');
+  });
+  bingSearchHandler.findImages(req.params,req.query.offset, function (err, response) {
+      if (err) return res.status(400)
+      else res.json(response)
+    });
+});
+
+router.get('/api/latest/imagesearch', function(req, res){
+  var theArray = latestSearchHandler.latestSearches();
+  res.json(theArray);
 });
 
 module.exports = router;
