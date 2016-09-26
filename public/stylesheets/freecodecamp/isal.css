@@ -5,6 +5,10 @@ body {
 	padding: 0;
 }
 
+.alert{
+	margin:20px 0px;	
+}
+
 .userStories ul{
   margin:0 0 0 8px;
 	border-left:3px solid silver;
