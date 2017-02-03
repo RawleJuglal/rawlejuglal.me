@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'https://mighty-ocean-59261.herokuapp.com/',
+                title:'Spiel',
+                faImg:' fa-comment',
+                faSize:' fa-3x',
+                desc:'Get it off your chest'
+            },
+            {
                 url:'freecodecamp/isal',
                 title:'Image Search Abstraction Layer',
                 faImg:' fa-search',
