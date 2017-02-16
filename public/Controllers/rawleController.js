@@ -120,14 +120,14 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faImg:' fa-clock-o',
                 faSize:' fa-3x',
                 desc:'Everyone needs a break'
-            },*/
+            },
             {
                 url:'freecodecamp/calculator',
                 title:'Calculator',
                 faImg:' fa-calculator',
                 faSize:' fa-5x',
                 desc:'Math made easier'
-            },
+            },*/
             {
                 url:'freecodecamp/randomQuoteMachine',
                 title:'Random Quote Machine',
