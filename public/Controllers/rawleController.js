@@ -9,7 +9,7 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'Get it off your chest'
             },
-            {
+            /*{
                 url:'freecodecamp/isal',
                 title:'Image Search Abstraction Layer',
                 faImg:' fa-search',
@@ -22,7 +22,7 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faImg:' fa-clock-o',
                 faSize:' fa-3x',
                 desc:'It\'s just a number'
-            },
+            },*/
             {
                 url:'freecodecamp/fileMetaData',
                 title:'File Meta Data Microservice',
@@ -30,13 +30,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'How many bytes in your file'
             },
-            {
+            /*{
                 url:'freecodecamp/urlShortener',
                 title:'Url Shortener',
                 faImg:' fa-compress',
                 faSize:' fa-3x',
                 desc:'Less can be more'
-            },
+            },*/
             {
                 url:'freecodecamp/headerParser',
                 title:'Request dot headers',
@@ -44,13 +44,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'A few of your headers'
             },
-            {
+            /*{
                 url:'codecademy/suggestionBox',
                 title:'Political Suggestion Box',
                 faImg:' fa-flag',
                 faSize:' fa-3x',
                 desc:'Have an idea the people should vote on'
-            },
+            },*/
             {
                 url:'codecademy/jlProfiles',
                 title:'Justice League Profiles',
@@ -65,13 +65,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'English Premier League'
             },
-            {
+            /*{
                 url:'codecademy/favWrestlemania',
                 title:'Rate your favorite Wrestlemania',
                 faImg:' fa-star',
                 faSize:' fa-3x',
                 desc:'It\'s Wrestlemania Time!'
-            },
+            },*/
             {
                 url:'codecademy/concacafr5',
                 title:'CONCACAF Roud 5',
@@ -114,13 +114,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-4x',
                 desc:'Can you follow directions'
             },
-            {
+            /*{
                 url:'freecodecamp/pomodoroClock',
                 title:'Pomodoro Clock',
                 faImg:' fa-clock-o',
                 faSize:' fa-3x',
                 desc:'Everyone needs a break'
-            },
+            },*/
             {
                 url:'freecodecamp/calculator',
                 title:'Calculator',
