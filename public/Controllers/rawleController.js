@@ -114,7 +114,7 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-4x',
                 desc:'Can you follow directions'
             },
-            /*{
+            {
                 url:'freecodecamp/pomodoroClock',
                 title:'Pomodoro Clock',
                 faImg:' fa-clock-o',
@@ -127,7 +127,7 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faImg:' fa-calculator',
                 faSize:' fa-5x',
                 desc:'Math made easier'
-            },*/
+            },
             {
                 url:'freecodecamp/randomQuoteMachine',
                 title:'Random Quote Machine',
