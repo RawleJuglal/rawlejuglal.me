@@ -16,7 +16,8 @@ $(document).ready(function(){
     }
    
    function getId(){
-       var $buttonID = $(event.target.id).selector;
+       var $buttonID = event.target.id;
+       console.log(event);
        var $windowsize = $(window).width();
        var $currentPeriod = $('#currentPeriod').text();
 

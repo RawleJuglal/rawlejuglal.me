@@ -19,7 +19,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 if (!process.env.MONGODB_URI) {
-  var mongoUri = 'mongodb://heroku_rfcxc5mm:tla5gdjq9jn2tib6mom717mrjt@ds031925.mlab.com:31925/heroku_rfcxc5mm'
+  var mongoUri = 'mongodb://heroku_5vv43jbv:d66sqhhbobuepr4fmdtgavqe6l@ds153609.mlab.com:53609/heroku_5vv43jbv'
 } else {
   var mongoUri = process.env.MONGODB_URI
 }

@@ -48,7 +48,7 @@ function doPercentage(currentTotal, num){
 }
 
 function getId(){
-  var $buttonID = $('#'+($(event.target.id).selector)).text();
+  var $buttonID = (event.target.innerHTML);
   if($buttonID == "AC")
     {
       clearMemory();
