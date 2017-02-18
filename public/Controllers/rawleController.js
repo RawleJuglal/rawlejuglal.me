@@ -15,14 +15,14 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faImg:' fa-search',
                 faSize:' fa-3x',
                 desc:'Using Bing to find images'
-            },
+            },*/
             {
                 url:'freecodecamp/unixTimeStamp',
                 title:'Unix Time Stamp Converter',
                 faImg:' fa-clock-o',
                 faSize:' fa-3x',
                 desc:'It\'s just a number'
-            },*/
+            },
             {
                 url:'freecodecamp/fileMetaData',
                 title:'File Meta Data Microservice',
