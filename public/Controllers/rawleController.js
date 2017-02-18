@@ -44,13 +44,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'A few of your headers'
             },
-            /*{
+            {
                 url:'codecademy/suggestionBox',
                 title:'Political Suggestion Box',
                 faImg:' fa-flag',
                 faSize:' fa-3x',
                 desc:'Have an idea the people should vote on'
-            },*/
+            },
             {
                 url:'codecademy/jlProfiles',
                 title:'Justice League Profiles',
@@ -65,13 +65,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'English Premier League'
             },
-            /*{
+            {
                 url:'codecademy/favWrestlemania',
                 title:'Rate your favorite Wrestlemania',
                 faImg:' fa-star',
                 faSize:' fa-3x',
                 desc:'It\'s Wrestlemania Time!'
-            },*/
+            },
             {
                 url:'codecademy/concacafr5',
                 title:'CONCACAF Roud 5',

@@ -1,7 +1,7 @@
 suggestionApp.controller('suggestionController',['suggestions', function(suggestions){
     var self = this;
     var swap=1;
-    var picArray = ['https://upload.wikimedia.org/wikipedia/commons/f/fb/Jefferson_Pier_and_Washington_Monument.jpg','https://upload.wikimedia.org/wikipedia/commons/c/cb/U.S._Navy_Memorial_in_Washington,_D.C..JPG','https://upload.wikimedia.org/wikipedia/commons/4/48/Verdun_-_Montfaucon_-_American_Monument_-_Cemetery_-_WW1.JPG','https://upload.wikimedia.org/wikipedia/commons/b/b0/Monument_Ave_Robert_E._Lee.jpg','https://upload.wikimedia.org/wikipedia/commons/0/05/Canada_US_border.JPG','https://upload.wikimedia.org/wikipedia/commons/c/c6/Defense.gov_photo_essay_071108-F-6655M-338.jpg','https://upload.wikimedia.org/wikipedia/commons/f/f0/Henry_Clay\'s_grave_in_Lexington_-_DSC09049.JPG','https://upload.wikimedia.org/wikipedia/commons/3/37/Sculpture_pont_de_l\'alma_Paris_FRA.jpg']
+    var picArray = ['https://upload.wikimedia.org/wikipedia/commons/f/fb/Jefferson_Pier_and_Washington_Monument.jpg','https://upload.wikimedia.org/wikipedia/commons/c/cb/U.S._Navy_Memorial_in_Washington,_D.C..JPG','https://upload.wikimedia.org/wikipedia/commons/4/48/Verdun_-_Montfaucon_-_American_Monument_-_Cemetery_-_WW1.JPG','https://upload.wikimedia.org/wikipedia/commons/b/b0/Monument_Ave_Robert_E._Lee.jpg','https://upload.wikimedia.org/wikipedia/commons/0/05/Canada_US_border.JPG','https://upload.wikimedia.org/wikipedia/commons/c/c6/Defense.gov_photo_essay_071108-F-6655M-338.jpg']
     self.posts = suggestions.posts;
     
     self.addSuggestion = function() {
