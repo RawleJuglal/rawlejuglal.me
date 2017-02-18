@@ -30,13 +30,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
                 faSize:' fa-3x',
                 desc:'How many bytes in your file'
             },
-            /*{
+            {
                 url:'freecodecamp/urlShortener',
                 title:'Url Shortener',
                 faImg:' fa-compress',
                 faSize:' fa-3x',
                 desc:'Less can be more'
-            },*/
+            },
             {
                 url:'freecodecamp/headerParser',
                 title:'Request dot headers',
