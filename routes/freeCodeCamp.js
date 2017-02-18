@@ -63,6 +63,7 @@ router.get('/urlShortener', function(req, res){
 });
 
 router.get('/urlShortener/:userUrl', function(req, res){
+  console.log('found the shortener route');
   if(URLShortener.checkValidUrl(req.params.userUrl))
     {
       var UserUrl = req.params.userUrl;
