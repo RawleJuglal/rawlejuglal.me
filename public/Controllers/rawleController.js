@@ -3,6 +3,13 @@ app.controller('rawleProfileController', ['$scope', function($scope){
     
     $scope.notes = [
             {
+                url:'http://lychee-sundae-59213.herokuapp.com/',
+                title:'ATTOKC',
+                faImg:' fa-hand-lizard-o',
+                faSize:' fa-3x',
+                desc:'Teaching OKC BJJ and more'
+            },
+            {
                 url:'https://mighty-ocean-59261.herokuapp.com/',
                 title:'Spiel',
                 faImg:' fa-comment',
